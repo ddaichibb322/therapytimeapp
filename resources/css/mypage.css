@@ -1,0 +1,27 @@
+body {
+    background-color: #F0F0F0!important;
+}
+
+.news {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.news-content {
+    font-size: 0.9rem;
+}
+
+.userinfo {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.userinfo-form {
+    margin: 0 50px 30px;
+    overflow: hidden;
+}
+
+.form-group {
+    margin-top: 25px;
+}
+

@@ -16,7 +16,7 @@ class CreateViewablesTable extends Migration
         Schema::create('viewables', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('course_id');
-            $table->bigInteger('content_id');
+            $table->bigInteger('type_id');
             $table->boolean('del_flg')->default(0);
             $table->timestamps();
         });

@@ -1,0 +1,45 @@
+.sidebar {
+    overflow: hidden;
+}
+
+.sidebar-userinfo {
+    padding: 2rem 2rem;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+
+}
+.sidebar-username {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.sidebar-course {
+    margin-top: 2rem;
+}
+.sidebar-coursename {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.sidebar-userinfo-hr {
+    background-color: #F0F0F0;
+}
+
+.sidebar-subtitle {
+    font-size: 1rem;
+}
+
+.sidebar-memo {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.sidebar-textarea {
+    border-radius: 0;
+}
+
+.sidebar-form {
+    margin-top: 0.5rem;
+}
+
+.no-member-contact-form {
+    margin-bottom: 1rem;
+}

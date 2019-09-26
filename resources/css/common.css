@@ -1,0 +1,97 @@
+.bg-purple {
+    background-color: #7C41CD!important;
+}
+
+.navbar-white {
+    color: #fff!important;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.btn-big {
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    display: block;
+    border-radius: 0;
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+.btn {
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-wide {
+    width: 100%;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #7C41CD;
+    color: white !important;
+    border: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background: #492280;
+}
+
+.btn-success {
+    background-color: #2C1749;
+    color: white !important;
+    border: none;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+    background: #4C287F;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+}
+
+.link, .link:hover {
+    font-size: 0.8rem;
+    color: black;
+
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ 
+.clearfix {display: inline-table;}
+ 
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+.main {
+    min-height: calc(100vh - 110px);
+    overflow: hidden;
+}
+.page-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;;
+    font-size: 1.6rem;
+}
+
+.main-container {
+    margin-top: 60px;
+}
+
+.icon {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+}

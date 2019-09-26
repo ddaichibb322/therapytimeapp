@@ -1,0 +1,100 @@
+.top {
+    position: relative;
+}
+
+.top-img {
+    height: 700px;
+    object-fit: cover;
+}
+
+.top-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+    display: inline-block;
+    width: 1000px;
+    text-align: center;
+}
+
+.top-section {
+    overflow: hidden;
+}
+
+.top-section-alliance {
+    margin: 100px 150px;
+}
+
+.top-section-content {
+    margin: 70px 150px;
+}
+
+.top-section-bg-gray {
+    background-color: #E9E9E9;
+}
+
+.top-section-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+}
+
+.top-section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.panel-voice {
+    padding: 25px;
+    border-radius: 3px;
+    background-color: #E9E9E9;
+    margin-bottom: 10px;
+}
+
+.panel-voice-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.panel-voice-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.panel-qa {
+    padding: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.panel-voice-username {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    text-align: right;
+}
+
+.panel-qa-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.panel-qa-text {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
