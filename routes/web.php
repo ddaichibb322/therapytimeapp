@@ -24,4 +24,5 @@ Route::post('/mypage/{id}', 'MypageController@update')->name('mypage.update');
 Route::get('/session', 'SessionController@list')->name('session');
 Route::get('/session/{id}', 'SessionController@detail')->name('session.detail');
 
+Route::get('/charge', 'ChargeController@index')->name('charge');
 
