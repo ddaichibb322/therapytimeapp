@@ -12,15 +12,14 @@
     text-align: center;
     font-size: 1.2rem;
 }
-.sidebar-course {
-    margin-top: 2rem;
-}
+
 .sidebar-coursename {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 .sidebar-userinfo-hr {
     background-color: #F0F0F0;
+    margin-bottom: 2rem;
 }
 
 .sidebar-subtitle {

@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 .top {
     position: relative;
+}
+
+.navbar-brand {
+    font-family: 'Abril Fatface', cursive;
 }
 
 .top-img {

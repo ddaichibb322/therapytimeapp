@@ -22,7 +22,12 @@ class MypageController extends Controller
     {
         // 現在ログインしているユーザー情報(DBデータ)を取得
         $user_data = Auth::user();
-        return view('mypage', ['user_data' => $user_data]);
+        $common = new \Common;
+        $course_name = $common->getCourseName();
+        return view('mypage', [
+            'user_data' => $user_data,
+            'course_name' => $course_name,
+        ]);
     }
 
     public function update(Request $request, $id) 

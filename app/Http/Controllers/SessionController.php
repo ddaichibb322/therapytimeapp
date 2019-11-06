@@ -24,11 +24,15 @@ class SessionController extends Controller
 
         $viewables_data = $this->createViewablesData();
         
+        $common = new \Common;
+        $course_name = $common->getCourseName();
+
         return view('session.list', [
             'user_data' => $user_data, 
             'contents_data' => $contents_db_data,
             'viewables_data' => $viewables_data,
             'courses_data' => $courses_db_data,
+            'course_name' => $course_name,
         ]);
     }
 
@@ -82,6 +86,8 @@ class SessionController extends Controller
             }
         }
 
+        $common = new \Common;
+        $course_name = $common->getCourseName();
         
         return view('session.detail', [
             'user_data' => $user_data, 
@@ -89,6 +95,7 @@ class SessionController extends Controller
             'is_viewable' => $is_viewable, 
             'is_login' => $is_login, 
             'is_free' => $is_free, 
+            'course_name' => $course_name,
         ]);
     }
 

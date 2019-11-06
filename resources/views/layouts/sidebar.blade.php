@@ -2,11 +2,13 @@
 <section class="sidebar">
     @auth
     <div class="sidebar-userinfo">
+        @if(!empty($user_data->name)) 
         <p class="sidebar-username">{{ $user_data->name }}</p>
         <hr class="sidebar-userinfo-hr">
+        @endif
         <div class="sidebar-course">
             <p class="sidebar-coursename">現在のコース：</p>
-            <p class="sidebar-coursename">[ここにコース名を表示する]</p>
+            <p class="sidebar-coursename">@if(!empty($course_name)) {{ $course_name }} @endif</p>
         </div>
     </div>
     @endauth
