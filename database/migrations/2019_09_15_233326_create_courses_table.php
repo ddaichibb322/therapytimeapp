@@ -18,6 +18,7 @@ class CreateCoursesTable extends Migration
             $table->string('course_cd')->nullable();
             $table->string('name');
             $table->integer('price');
+            $table->string('plan_cd')->nullable();
             $table->string('memo', 2000)->nullable();
             $table->boolean('del_flg')->default(0);
             $table->timestamps();

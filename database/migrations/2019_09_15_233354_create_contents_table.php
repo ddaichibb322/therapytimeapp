@@ -24,8 +24,7 @@ class CreateContentsTable extends Migration
             $table->bigInteger('type_id');
             $table->integer('level')->nullable();
             $table->string('memo', 2000)->nullable();
-            $table->boolean('no_member_viewable_flg')->default(0)->comment('会員ではないユーザでも閲覧できるかどうか');
-            $table->boolean('free_member_viewable_flg')->default(0)->comment('無料会員でも閲覧できるかどうか');
+            $table->integer('viewable_flg')->default(0)->comment('0:無料会員すら見れない 1:無料会員は見れる 2:会員じゃなくても見れる');
             $table->boolean('del_flg')->default(0);
             $table->timestamps();
         });

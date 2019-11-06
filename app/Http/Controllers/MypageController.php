@@ -9,10 +9,15 @@ use Illuminate\Support\Facades\Auth;
 class MypageController extends Controller
 {
     /**
-     * Show the application dashboard.
+     * Create a new controller instance.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return void
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index()
     {
         // 現在ログインしているユーザー情報(DBデータ)を取得

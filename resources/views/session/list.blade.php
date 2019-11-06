@@ -33,6 +33,23 @@
             </div>
             <div class="session-info col-md-8">
                 <a class="session-title" href="{{ url('session/' . $content->id) }}">{{ $content->name }}</a>  
+                <div class="limitation">
+                    <span>対象ユーザ:</span>
+                    @if($content->viewable_flg == 2)
+                        <span>全員</span>
+                    @else
+                        @if($content->viewable_flg == 1)
+                            <span>無料会員</span>
+                        @endif        
+                               
+                        @foreach ($courses_data as $course)
+                            @if(in_array($course['id'], $viewables_data[$content->type->id]))
+                            {{-- 今表示しようとしているcontentsのtypeを取り出して全コースと比較し、そのtypeを閲覧できるコースかどうかチェックする --}}
+                                <span>{{ $course['name'] }}</span>
+                            @endif
+                        @endforeach
+                    @endif
+                </div>
                 <p class="session-outline">{{ $content->outline }}</p>
 
             </div>

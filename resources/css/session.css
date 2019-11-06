@@ -40,21 +40,41 @@
 
 }
 
-.iframeWrap {
+.movie{
     position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 60%;
+    background-color: black;
+
 }
 
-.session-movie {
-    overflow:hidden;
-    overflow-x:hidden;
-    overflow-y:hidden;
-    height:100%;
-    width:100%;
-    position:relative;
-    top:0px;
-    left:0px;
-    right:0px;
-    bottom:0px;
+.movie iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.session-movie-not-viewable{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.session-movie-not-viewable-message{
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    line-height: 2rem;    
 }
 
 .session-outline {

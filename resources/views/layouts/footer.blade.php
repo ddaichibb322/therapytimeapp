@@ -5,13 +5,16 @@
             <div class="navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-3">
-                        <a class="nav-link active" href="#">利用規約</a>
+                        <a class="nav-link active" href="{{ route('agreement') }}">利用規約</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link active" href="#">プライバシーポリシー</a>
+                        <a class="nav-link active" href="{{ route('policy') }}">プライバシーポリシー</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link active" href="#">お問い合わせ</a>
+                        <a class="nav-link active" href="{{ route('tokutei') }}">特定商取引法に基づく表記</a>
+                    </li>                    
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{{ route('contact') }}">お問い合わせ</a>
                     </li>
                 </ul>
                 <span class="navbar-text">Copyright © Therapy Time All Rights Reserved.</span>

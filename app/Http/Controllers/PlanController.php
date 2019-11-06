@@ -15,6 +15,15 @@ class PlanController extends Controller
      */
     public function index()
     {
-        return view('plan');
+        $env = config('app.env');
+        $apiKeyPub = '';
+
+        if ($env == 'production') {
+            $apiKeyPub = config('payment.apikey.prod.pub');
+        } else {
+            $apiKeyPub = config('payment.apikey.test.pub');
+        }
+
+        return view('plan', ['apiKeyPub' => $apiKeyPub]);
     }
 }
