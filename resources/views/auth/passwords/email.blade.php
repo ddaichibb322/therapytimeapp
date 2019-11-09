@@ -1,4 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.template_1col')
+@section('title', 'パスワードリセット')
+@section('description', '説明文をここに入れる。')
+
+@include('layouts.head')
+ 
+@include('layouts.header')
 
 @section('content')
 <div class="container">
@@ -45,3 +51,4 @@
     </div>
 </div>
 @endsection
+@include('layouts.footer')
