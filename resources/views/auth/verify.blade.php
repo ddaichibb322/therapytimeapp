@@ -1,25 +1,27 @@
-@extends('layouts.app')
+@extends('layouts.template_2col')
+ 
+@section('title', 'セッション一覧')
+@section('description', '説明文をここに入れる。')
+@include('layouts.sidebar')
+
+@include('layouts.head')
+ 
+@include('layouts.header')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
+                <div class="card-header">登録したメールを確認してください。</div>
 
                 <div class="card-body">
                     @if (session('resent'))
                         <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
+                            新しい確認リンクがメールアドレスに送信されました。
                         </div>
                     @endif
-
-                    {{ __('Before proceeding, please check your email for a verification link.') }}
-                    {{ __('If you did not receive the email') }},
-                    <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
-                        @csrf
-		                <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
-	                </form>
+                    続行する前に、電子メールで確認リンクを確認してください。メールが届かない場合は、 <a href="{{ route('verification.resend') }}">ここをクリックして別のメールをリクエストしてください</a>。
                 </div>
             </div>
         </div>

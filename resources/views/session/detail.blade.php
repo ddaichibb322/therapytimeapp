@@ -24,8 +24,10 @@
                 <div class="session-movie-not-viewable">
                     <p class="session-movie-not-viewable-message">
                         このセッションを受けられません。<br>
-                        @if(!$is_login)
-                        このセッションはユーザ登録後に閲覧していただけます。
+                        <!-- TODO: 文言表示ロジック直す。  -->
+                        @if(!($is_login))
+                        {{-- ログインしていてかつメール認証が完了している場合のみ表示する --}}
+                        このセッションは会員登録後に閲覧していただけます。
                         @elseif($is_free)
                         このセッションに対応したコースに入会後、閲覧していただけます。
                         @else 

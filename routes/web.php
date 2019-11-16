@@ -15,7 +15,9 @@ Route::get('/', 'TopController@index')->name('top');
 Route::get('/plan', 'PlanController@index')->name('plan');
 
 
-Auth::routes();
+
+Auth::routes(['verify' => true]);
+
 
 Route::get('/agreement', 'HomeController@agreement')->name('agreement');
 Route::get('/tokutei', 'HomeController@tokutei')->name('tokutei');
@@ -31,3 +33,6 @@ Route::get('/session/{id}', 'SessionController@detail')->name('session.detail');
 
 Route::get('/charge/{course_cd}', 'ChargeController@index')->name('charge');
 Route::post('/charge/createsub', 'ChargeController@createSub')->name('charge.createsub');
+
+
+Route::post('/opinion', 'OpinionController@sendmail')->name('opinion.sendmail');

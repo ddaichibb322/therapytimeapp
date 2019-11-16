@@ -47,15 +47,16 @@ class SessionController extends Controller
 
         $viewables_data = $this->createViewablesData();
 
-        // 視聴可能かどうか
+        // このセッションを開いたユーザが、このセッションを閲覧可能ならばtrue
         $is_viewable = false;
-        // ログインしているかどうか
+        // ログインしていてかつメール認証も完了していればtrue
         $is_login = false;
-        // 無料会員かどうか
+        // 無料会員ならばtrue
         $is_free = false;
 
         $payment_db_data = '';
-        if (Auth::check()) {
+        if (Auth::check() && optional(Auth::user())->hasVerifiedEmail()) {
+             // ログインしていてかつメール認証も完了している
             $is_login = true;
             $payment_db_data = Payment::where('user_id', $user_data->id)
                 ->where('invalid_flg', 0)
