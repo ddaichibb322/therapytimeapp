@@ -24,6 +24,7 @@ Route::get('/tokutei', 'HomeController@tokutei')->name('tokutei');
 Route::get('/policy', 'HomeController@policy')->name('policy');
 
 Route::get('/contact', 'ContactController@index')->name('contact');
+Route::post('/contact/sendmail', 'ContactController@sendmail')->name('contact.sendmail');
 
 Route::get('/mypage', 'MypageController@index')->name('mypage');
 Route::post('/mypage/{id}', 'MypageController@update')->name('mypage.update');
@@ -35,4 +36,4 @@ Route::get('/charge/{course_cd}', 'ChargeController@index')->name('charge');
 Route::post('/charge/createsub', 'ChargeController@createSub')->name('charge.createsub');
 
 
-Route::post('/opinion', 'OpinionController@sendmail')->name('opinion.sendmail');
+Route::post('/opinion/sendmail', 'OpinionController@sendmail')->name('opinion.sendmail');

@@ -1,3 +1,13 @@
+/* bootstrap override start*/
+.form-control:focus {    
+    border-color: #ced4da;;
+    box-shadow: none;
+}
+
+/* bootstrap override end*/
+
+
+
 .bg-purple {
     background-color: #7C41CD!important;
 }
@@ -10,6 +20,7 @@
     display: block;
     width: 100%;
 }
+
 
 .btn-big {
     padding: .75rem 1.5rem;

@@ -15,9 +15,5 @@ mix.js('resources/js/app.js', 'public/js')
    .js('resources/js/common.js', 'public/js')
    .sass('resources/sass/app.scss', 'public/css')
    .styles([
-      'resources/css/common.css',
-      'resources/css/mypage.css',
-      'resources/css/session.css',
-      'resources/css/sidebar.css',
-      'resources/css/top.css'
+      'resources/css/*.css'
   ], 'public/css/app.css');

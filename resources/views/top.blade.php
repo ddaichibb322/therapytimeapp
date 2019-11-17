@@ -8,10 +8,10 @@
 @include('layouts.header')
  
 @section('content')
-<div class="top">
+<section class="top">
     <p class="top-message">本気で自分を変えるための、瞑想アプリ。</p>
     <img class="img top-img" src="/img/top_mv_01.jpg" alt="瞑想する人">
-</div>
+</section>
 <section class="top-section">
     <div class="top-section-alliance">
         <p class="top-section-text">Awereness Instituteとの協賛</p>
