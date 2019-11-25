@@ -48,11 +48,44 @@
     margin: 0;
 }
 
+.top-section-text--width-img {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
 .top-section-title {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 30px;
     padding-bottom: 10px;
+}
+
+.top-section__img-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section__figure {
+    flex-basis: 30%;
+}
+
+.top-section__img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.top-section__img-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.top-section__img-desc {
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 .panel-voice {
