@@ -1,12 +1,52 @@
+html,body {
+	width: 100%;
+	background: white;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	font-family: Quicksand, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+}
+
+table {
+    width: 100%;
+    border: none;
+    border-bottom: none;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: normal;
+}
+
+a {
+    transition: all 500ms 0s ease;
+}
+
 /* bootstrap override start*/
 .form-control:focus {    
     border-color: #ced4da;;
     box-shadow: none;
 }
-
 /* bootstrap override end*/
 
+/* menu bar start */
+.nav-item .icon {
+    font-size: 0.8rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.0rem;
+}
 
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    transition: all 300ms 0s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.75);
+
+}
+/* menu bar end */
 
 .bg-purple {
     background-color: #7C41CD!important;
@@ -33,8 +73,8 @@
 }
 
 .btn {
-    text-decoration: none;
-    transition: all 0.3s;
+    text-decoration: none;    
+    transition: all 500ms 0s ease;
 }
 
 .btn-wide {
@@ -102,7 +142,3 @@
     margin-top: 60px;
 }
 
-.icon {
-    font-size: 0.9rem;
-    margin-right: 0.4rem;
-}
