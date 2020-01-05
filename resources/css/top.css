@@ -3,43 +3,142 @@
     position: relative;
 }
 
+.empty-box {    
+    width: 100vw;
+    height: 100vh;
+}
+
 .navbar-brand {
     font-family: 'Abril Fatface', cursive;
 }
 
-.top-img {
-    height: 700px;
+.top__img {
+    height: 100vh;
     object-fit: cover;
 }
 
-.top-message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+.top__button {
+    font-size: 1.2rem;
     font-weight: bold;
-    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 3px;    
+    position: absolute;
+    top: 51%;
+    left: 11.4%;
+    color: white;    
+    border: none;
+    padding: 1.8rem 2.5rem;
+    display: block;
+    border-radius: 3;
+    background: linear-gradient(to right, #f74949, #ffb947);
+    opacity: 0.8;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.top__button:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, .2);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -10%;
+    left: -180%;
+    transition: .3s ease-in-out;
+}
+
+.top__button:hover:before {
+    left: 60%;
+}
+
+ 
+.top__button:hover, .top__button:focus, .top__button:active {
+    
+    /* background: linear-gradient(to right, #f74949, #f2ae40);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color:white; */
+    text-decoration: none;
+    color: white;
+    
+} 
+
+.top-assertion {
+    background-color: #fff;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.top-assertion__ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    height:100%;
+}
+
+.top-assertion__li {
+    text-align: center;
+    font-size: 1.25rem;    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.top-assertion__li > i {
+    display: inline;
+
+}
+
+.top__message {
+    position: absolute;
+    top: 36%;
+    left: 11.4%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 2;
     color: #fff;
     display: inline-block;
-    width: 1000px;
-    text-align: center;
+    text-align: left;
 }
 
 .top-section {
     overflow: hidden;
+    padding: 70px 150px;
+    text-align: center;
+    position: relative;
 }
 
-.top-section-alliance {
+.top-section--bg-gray {
+    overflow: hidden;
+    padding: 70px 150px;
+    text-align: center;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.top-section-title {
+    display:inline-block;
+    font-size: 1.5rem;
+    margin: 0 auto 30px;
+    padding: 0 20px 10px;
+    border-bottom: 1px solid #7C41CD;
+}
+
+
+
+/* .top-section-alliance {
     margin: 100px 150px;
-}
-
-.top-section-content {
-    margin: 70px 150px;
 }
 
 .top-section-bg-gray {
     background-color: #E9E9E9;
-}
+} */
 
 .top-section-text {
     text-align: center;
@@ -56,39 +155,47 @@
     margin-bottom: 3rem;
 }
 
-.top-section-title {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-}
+
 
 .top-section__img-list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .top-section__figure {
-    flex-basis: 30%;
+    flex-basis: 45%;
 }
 
 .top-section__img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 2rem;
 }
 
 .top-section__img-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1.2rem;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
 }
 
 .top-section__img-desc {
+    width: 80%;
     font-size: 1rem;
     line-height: 2rem;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.top-section__wave-gray {    
+    background-image: url(/img/wave.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 11.6%;
+    height: 0;
 }
 
 .panel-voice {
+    text-align: left;
     padding: 25px;
     border-radius: 3px;
     background-color: #E9E9E9;
@@ -96,12 +203,14 @@
 }
 
 .panel-voice-title {
+    text-align: left;
     font-size: 1.2rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .panel-voice-text {
+    text-align: left;
     font-size: 1rem;
     line-height: 2rem;
     margin: 0;
@@ -109,6 +218,7 @@
 }
 
 .panel-qa {
+    text-align: left;
     padding: 25px;
     border-radius: 3px;
     background-color: #fff;
@@ -123,12 +233,14 @@
 }
 
 .panel-qa-title {
+    text-align: left;
     font-size: 1.2rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
 .panel-qa-text {
+    text-align: left;
     font-size: 1rem;
     line-height: 2rem;
     margin: 0;
@@ -136,3 +248,7 @@
 }
 
 
+
+.top-section__reason-li {
+    list-style: none;
+}

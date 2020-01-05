@@ -30,7 +30,7 @@ a {
 }
 /* bootstrap override end*/
 
-/* menu bar start */
+/* header bar start */
 .nav-item .icon {
     font-size: 0.8rem;
     margin-right: 0.25rem;
@@ -46,7 +46,20 @@ a {
     color: rgba(255,255,255,.75);
 
 }
-/* menu bar end */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header nav {
+    transition: all 100ms 0s ease;
+}
+
+/* header bar end */
 
 .bg-purple {
     background-color: #7C41CD!important;

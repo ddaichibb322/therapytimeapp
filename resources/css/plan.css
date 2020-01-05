@@ -46,7 +46,7 @@
     margin-bottom: 20px;
     padding: 20px 20px;
     width: 100%;
-    background-color: #E7E6E9;
+    background-color: #f3f3f3;
     border-radius: 3px;
     line-height: 2;
 }
@@ -80,7 +80,7 @@
 
 .plan-card__detail-table {
     border-bottom: .1px solid grey;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .plan-card__detail-table-head-tr {
