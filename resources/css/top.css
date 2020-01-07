@@ -155,34 +155,96 @@
     margin-bottom: 3rem;
 }
 
-
-
-.top-section__img-list{
+.top-section__merits{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 40px;
 }
 
-.top-section__figure {
+.top-section__merit-container {
     flex-basis: 45%;
 }
 
-.top-section__img {
+.top-section__merit-img--1 {
+    width: 100%;
+    height: 90%;
+    padding-top: 15%;
+}
+
+.top-section__merit-img--2 {
+    width: 100%;
+    height: 100%;
+}
+
+.top-section__merit-img-container {
+    margin: 0 auto;
     width: 80%;
-    margin-bottom: 2rem;
+    height: 400px;
+    margin-bottom: 1rem;
 }
 
-.top-section__img-title {
-    font-size: 1.25rem;
-    margin-bottom: 30px;
+.top-section__merit-title {
+    font-size: 1.25rem;    
 }
 
-.top-section__img-desc {
+.top-section__merit-desc {
     width: 80%;
     font-size: 1rem;
     line-height: 2rem;
     text-align: left;
     margin: 0 auto;
 }
+
+.top-section__reasons {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    
+}
+
+.top-section__reason {
+    flex-basis: 20%;
+}
+
+.top-section__reason-img-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.top-section__reason-img {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(0.5);
+    ;
+}
+
+.top-section__reason-title {
+    position: absolute;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    z-index: 100
+}
+
+.top-section__reason-desc {
+    width:80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+
+
+
 
 .top-section__wave-gray {    
     background-image: url(/img/wave.svg);
@@ -247,8 +309,19 @@
     margin-bottom: 20px;
 }
 
-
+.top-section__reason-ul {
+    display: table;
+    padding: 0;
+    margin: 0 auto 60px;
+    text-align: left;
+    list-style: none;
+}
 
 .top-section__reason-li {
-    list-style: none;
+    display: table;
+    padding-left: 40px;
+	line-height: 3;
+	background: url("/img/top-list-style.png") left 0px top 1.5rem no-repeat;
+    background-size: 1.5rem;
+    font-size: 1.5rem;
 }

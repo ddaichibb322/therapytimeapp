@@ -2,7 +2,7 @@
 <header class="header">
     <nav class="navbar navbar-expand-lg navbar-dark static-top">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('top') }}">Therapy Time</a>
+            <h1><a class="navbar-brand" href="{{ route('top') }}">Therapy Time</a></h1>            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
