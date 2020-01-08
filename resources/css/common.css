@@ -4,7 +4,9 @@ html,body {
 	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	font-family: Quicksand, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+    font-family: Quicksand, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+    overflow: scroll;
+    color: #444;
 }
 
 table {
@@ -21,6 +23,7 @@ th {
 
 a {
     transition: all 500ms 0s ease;
+    color: #444;
 }
 
 /* bootstrap override start*/
@@ -140,18 +143,31 @@ a {
 .clearfix {display: block;}
 /* End hide from IE-mac */
 
-.main {
+.main-container {
     min-height: calc(100vh - 110px);
+    margin-top: 55px;
     overflow: hidden;
 }
+
+.two-cols { 
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.two-cols__main {
+    flex-basis: 65%;
+}
+
+.two-cols__sidebar {
+    flex-basis: 20%;
+}
+
 .page-title {
     text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
-
-.main-container {
-    margin-top: 60px;
-}
-

@@ -1,12 +1,13 @@
 .plan-section {
-    margin: 0 150px 100px;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .plan-section__title {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 10px;
 }
 
@@ -44,7 +45,7 @@
 .plan-card__discription {
     font-size: 1rem;
     margin-bottom: 20px;
-    padding: 20px 20px;
+    padding: 20px;
     width: 100%;
     background-color: #f3f3f3;
     border-radius: 3px;

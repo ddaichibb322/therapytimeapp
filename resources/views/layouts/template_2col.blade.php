@@ -5,12 +5,12 @@
 </head>
 <body>
 @yield('header')
-<div class="container main-container">
-    <div class="row">
-        <div class="col-md-9">
+<div class="main-container">
+    <div class="two-cols">
+        <div class="two-cols__main">
             @yield('content')
         </div>
-        <div class="col-md-3">
+        <div class="two-cols__sidebar">
             @yield('sidebar')
         </div>
     </div>

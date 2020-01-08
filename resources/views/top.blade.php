@@ -1,4 +1,4 @@
-@extends('layouts.template_1col')
+@extends('layouts.template_top')
 
 @section('title', 'TOP')
 @section('description', '説明文をここに入れる。')
