@@ -35,6 +35,7 @@
                     <div class="session-thumbnail__img-container">
                         <img class="session-thumbnail__img" src="{{ asset('/img/session_thumbnail/' . $content->thumbnail_url) }}" alt="{{ $content->name }}">
                     </div>
+                    <div class="session-thumbnail__hover-text">セッションを受ける</div>
                 </a>
             </div>
             <div class="session-info">
