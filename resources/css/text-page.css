@@ -1,0 +1,55 @@
+.text-page {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+}
+
+.text-page__main-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+/* 
+.text-page__desc {
+
+} */
+
+.text-page__sub-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-page__ol {
+    margin-left: 30px;
+}
+
+/* .text-page__li {
+ 
+} */
+
+.text-page-table, .text-page-table__th, .text-page-table__td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.text-page-table {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.8rem;    
+}
+
+.text-page-table__th {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.text-page-table__td {
+    padding-left: 15px;
+
+}

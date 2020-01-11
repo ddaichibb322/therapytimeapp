@@ -18,25 +18,25 @@
     <div class="session">
         <div class="session__title-container">
             <a class="session__title" href="{{ url('session/' . $content->id) }}">{{ $content->name }}</a>
+            <div class="@if($content->type->id == 1)
+session-thumbnail__type--healing
+@elseif($content->type->id == 2)
+session-thumbnail__type--coaching
+@elseif($content->type->id == 3)
+session-thumbnail__type--spiritual
+@elseif($content->type->id == 3)
+session-thumbnail__type--loveandbeauty
+@endif">{{ $content->type->name }}</div>
         </div>
         <div class="session-content">
             <div class="session-thumbnail">
                 <a class="session-thumbnail__link" href="{{ url('session/' . $content->id) }}">
-                    <span class="session-thumbnail__type 
-                        @if($content->type->id == 1)
-                            session-type-healing
-                        @elseif($content->type->id == 2)
-                            session-type-coaching
-                        @elseif($content->type->id == 3)
-                            session-type-spiritual
-                        @elseif($content->type->id == 3)
-                            session-type-loveandbeauty
-                        @endif">{{ $content->type->name }}</span>
                     <div class="session-thumbnail__img-container">
                         <img class="session-thumbnail__img" src="{{ asset('/img/session_thumbnail/' . $content->thumbnail_url) }}" alt="{{ $content->name }}">
                     </div>
-                    <div class="session-thumbnail__hover-text">セッションを受ける</div>
+                    <div class="session-thumbnail__hover-text">詳細を見る</div>
                 </a>
+                <!-- <div><a class="session-thumbnail__text-link" href="">詳細ページはこちら</a></div> -->
             </div>
             <div class="session-info">
                 <!-- <div class="session-info__limitation">

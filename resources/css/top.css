@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 .top-container {
-    
+
 }
 
 .top {
@@ -237,7 +237,7 @@
     color: white;
     font-weight: bold;
     width: 100%;
-    z-index: 100
+    z-index: 2;
 }
 
 .top-section__reason-desc {

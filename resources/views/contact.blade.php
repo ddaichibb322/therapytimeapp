@@ -30,9 +30,7 @@
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <div class="clearfix mt-5">
-            <button type="submit" class="float-right btn btn-success d-block">送信する</button>
-        </div>
+        <button type="submit" class="btn btn-primary contact__submit-button">送信する</button>
     </form>
 </div>
 

@@ -14,14 +14,14 @@
     @endif
 
     <div class="no-member-contact-form">
-        <h2 class="sidebar-subtitle"><b>ご意見箱</b></h2>
-        <p class="sidebar-memo">※こちらのフォームで送信された内容はユーザーの特定、ご返信ができません。返信希望の場合は、サイト一番下にある「お問合せ」からご連絡ください。</p>
+        <h2 class="sidebar__subtitle"><b>ご意見箱</b></h2>
+        <p class="sidebar__memo">※こちらのフォームで送信された内容はユーザーの特定、ご返信ができません。返信希望の場合は、サイト一番下にある「お問合せ」からご連絡ください。</p>
         <form action="{{ route('opinion.sendmail') }}" method="POST">
             @csrf
             <div class="form-group sidebar-form">
-                <textarea class="form-control sidebar-textarea"  name="comment" id="" rows="5"></textarea>
+                <textarea class="form-control sidebar__textarea"  name="comment" id="" rows="6"></textarea>
             </div>
-            <button type="submit" class="btn btn-success btn-wide">送信する</button>
+            <button type="submit" class="btn btn-primary btn-wide">送信する</button>
         </form>
     </div>
 

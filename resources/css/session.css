@@ -1,11 +1,29 @@
 .session {    
-    margin-bottom: 45px;
-    padding-bottom: 50px;
+    margin-bottom: 35px;
+    padding-bottom: 40px;
     border-bottom: 2px solid #f3f3f3;
 }
 
 .session:last-child {    
     border-bottom: none;
+}
+
+.session__title-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1.5rem;
+}
+
+.session__title {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    display: block;
+    height: 1.5rem;
+    box-align: center; 
 }
 
 .session-content {
@@ -23,64 +41,92 @@
     flex-basis: 60%;    
 }
 
-.session-thumbnail__type {
-    position: absolute;
-    background-color: rgba(1, 1, 1, 0.3);
+.session-info__outline {
+    background-color: #f3f3f3;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 3px;
+    line-height: 2;
+    height: 140px;
+
+}
+
+.session-thumbnail__type--healing {
+    background-color: #f0ce0f;
     color: white;
-    padding: 0.25rem 0.5rem;
-    z-index: 101;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.session-thumbnail__type--coaching {
+    background-color: #1e90ff;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.session-thumbnail__type--spiritual {
+    background-color: #8b008b;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 15px;
+}
+
+.session-thumbnail__type--loveandbeauty {
+    background-color: #ff69b4;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 15px;
 }
 
 .session-thumbnail__img-container {
     width: 100%;
     background-color: #000;    
+    overflow: hidden;
 }
 
-.session-thumbnail:hover .session-thumbnail__img {
-    filter: brightness(0.5);
+.session-thumbnail__link:hover .session-thumbnail__img {
+    filter: brightness(0.7);
     transform: scale(1.2);
 }
-
-.session-thumbnail:hover .session-thumbnail__hover-text {
-    opacity: 1;
-}
-
-.session-thumbnail__hover-text:hover {
-    pointer-events: none;
-}
-
-.session-thumbnail__img {
-    width: 100%;
-    height: 160px; 
-    object-fit: cover;
-    vertical-align: bottom;
-    transition: all 0.3s 0s ease;
-}
-
 
 .session-thumbnail__hover-text {
     opacity: 0;
     position: absolute;
     color: #fff;
-    top: 75%;
+    top: 50%;
     left: 50%;
-    width: 100%;
-    height: auto;
+    width: 70px;
+    height: 70px;
+    padding-top: 48px;
     text-align: center;
-    font-size: .9rem;    
-    transform: translate(-50%, -50%);
+    margin-top: -35px;
+    margin-left: -35px;
+    font-size: .75rem;
+    transform: translate(0, 15px) scale(1.2);
     transition: all 0.3s 0s ease;
-    z-index: 100;
+    z-index: 2;
 }
 
 .session-thumbnail__hover-text::before {
     content: '';
     position: absolute;
-    top: -150%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
     border: 1px solid #fff;
+    margin-left: -20px;
     width: 40px;
     height: 40px;
     display: block;
@@ -89,35 +135,33 @@
     border-radius: 50%;
 }
 
-.session-thumbnail__link {
-    display: relative;
+.session-thumbnail__hover-text:hover {
+    pointer-events: none;
+}
+
+.session-thumbnail__link:hover .session-thumbnail__hover-text {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+}
+
+.session-thumbnail__img {
     width: 100%;
+    height: 140px;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: all 0.3s 0s ease;
 }
 
-.session__title-container {
-    margin-bottom: 10px;
+.session-thumbnail__link {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-.session__title {
-    font-size: 1.2rem;
-    line-height: 1;
-    font-weight: bold;
-    letter-spacing: 2.5px;
-}
-
-.session__title:hover {
-    color: #7C41CD;
-    margin-bottom: 15px;
-}
-
-.session-info__outline {
-    background-color: #f3f3f3;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 3px;
-    line-height: 2;
-    height: 100%;
-
+.session-thumbnail__text-link {
+    float: right;
+    font-size: 0.8rem;    
 }
 
 .movie{
@@ -126,6 +170,7 @@
     height: 0;
     padding-top: 60%;
     background-color: black;
+    margin-bottom: 30px;
 
 }
 
@@ -135,6 +180,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.session-detail {
+    padding-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .session-movie-not-viewable{
@@ -157,23 +207,32 @@
     line-height: 2rem;    
 }
 
+.session-movie-not-viewable-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
 .session-outline {
     overflow: hidden;
 }
 
-.session-type-healing {
-    background-color: rgb(106, 194, 106);
+/* .session-detail__info {
+    
+} */
+
+.session-detail__subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.session-type-coaching {
-    background-color: green;
+.session-detail__description {
+    background-color: #f3f3f3;
+    padding: 10px 20px;
+    line-height: 2;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
 }
-
-.session-type-spiritual {
-    background-color: green;
-}
-
-.session-type-loveandbeauty {
-    background-color: green;
-}
-

@@ -1,18 +1,12 @@
-.contact {
+.register {
+    width: 80%;
     margin: 0 auto;
-    width: 50%
 }
 
-.contact__title {
+.register__main-title {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 30px;
     padding-top: 40px;
     padding-bottom: 10px;
 }
-
-.contact__submit-button {
-    float: right;
-    margin-top: 20px;
-}
-
