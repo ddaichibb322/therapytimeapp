@@ -157,6 +157,11 @@
     width: 100%;
     overflow: hidden;
     margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.session-thumbnail__link:hover {
+    border-radius: 3px;
 }
 
 .session-thumbnail__text-link {
