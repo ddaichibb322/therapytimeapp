@@ -40,15 +40,15 @@
             @endif
         </div>
         <div class="session-detail__info">
-            <h2 class="session-detail__subtitle">セッションの概要</h2>
+            <h3 class="session-detail__subtitle">セッションの概要</h3>
             <p class="session-detail__description">{{ $content_detail_data->outline }}</p>
         </div>
         <div class="session-detail__info">
-            <h2 class="session-detail__subtitle">注意事項</h2>
+            <h3 class="session-detail__subtitle">注意事項</h3>
             <p class="session-detail__description">{{ $content_detail_data->caution }}</p>
         </div>
         <div class="session-detail__info">
-            <h2 class="session-detail__subtitle">補足</h2>
+            <h3 class="session-detail__subtitle">補足</h3>
             <p class="session-detail__description">{{ $content_detail_data->supplement }}</p>
         </div>
 

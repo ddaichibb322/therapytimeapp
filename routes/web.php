@@ -28,8 +28,11 @@ Route::post('/contact/sendmail', 'ContactController@sendmail')->name('contact.se
 
 Route::get('/mypage', 'MypageController@index')->name('mypage');
 Route::post('/mypage/{id}', 'MypageController@update')->name('mypage.update');
+Route::get('changepassword', 'MypageController@showChangePasswordForm');
+Route::post('changepassword', 'MypageController@changePassword')->name('changepassword');
 
-Route::get('/session', 'SessionController@list')->name('session');
+
+Route::get('/session', 'SessionController@show')->name('session');
 Route::get('/session/{id}', 'SessionController@detail')->name('session.detail');
 
 Route::get('/charge/{course_cd}', 'ChargeController@index')->name('charge');

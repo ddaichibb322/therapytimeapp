@@ -1,23 +1,87 @@
-.news {
-    background-color: #fff;
-    overflow: hidden;
+.mypage {
+    padding-bottom: 35px;
+    margin-bottom: 40px;
 }
 
-.news-content {
+/* .news {
+
+} */
+
+.news__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news__items {
+    background-color: #f3f3f3;
+    padding: 10px 40px;
+    line-height: 2;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.news__item {
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
-.userinfo {
-    background-color: #fff;
+/* .userinfo {
+
+} */
+.userinfo__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.userinfo__items {
+    background-color: #f3f3f3;
+    padding: 20px 40px 30px;
+    line-height: 2;
+    border-radius: 3px;
+    margin-bottom: 40px;
     overflow: hidden;
 }
 
-.userinfo-form {
-    margin: 0 50px 30px;
-    overflow: hidden;
+/* .mypage-form {
+} */
+
+.mypage-form .form-group {
+    margin-bottom: 30px;
 }
 
-.form-group {
-    margin-top: 25px;
+.mypage-form .form-group > label {    
+    margin-bottom: 5px;
 }
 
+.mypage-form .form-control {
+    border: 0;
+    border-radius: 2.5px;
+}
+
+.mypage-form .form-control-plaintext {
+    letter-spacing: 2.5px;
+    border: 0;
+}
+
+.mypage-form .form-control-plaintext:hover, .mypage-form .form-control-plaintext:active, .mypage-form .form-control-plaintext:focus {
+    border: 0;
+    outline: 0;
+}
+
+
+.mypage-form__submit-button-container {
+    float: right;
+}
+
+.mypage-form__submit-button {
+    margin-bottom: 10px;
+    float: right;
+}
+
+.mypage-form__password-change-link {
+    font-size: 0.75rem;
+    display: block;
+    clear: both;
+}

@@ -15,7 +15,7 @@
     <div class="top-assertion">
         <ul class="top-assertion__ul">
             <li class="top-assertion__li">
-                <div>専門家<br><b>全コンテンツ監修</b></div>
+                <div>全コンテンツ<br><b>専門家監修</b></div>
             </li>
             <li class="top-assertion__li">
                 <div>平均評価<br><i class="fas fa-star"></i><b>4.7</b></div>

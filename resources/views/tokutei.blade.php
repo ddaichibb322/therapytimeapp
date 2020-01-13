@@ -1,6 +1,6 @@
 @extends('layouts.template_1col')
 
-@section('title', '利用規約')
+@section('title', '特定商取引法に基づく表示')
 @section('description', '説明文をここに入れる。')
 @include('layouts.head')
 

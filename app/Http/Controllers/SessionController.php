@@ -11,12 +11,8 @@ use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
 {
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function list()
+
+    public function show()
     {
         $user_data = Auth::user();
         $contents_db_data = Content::all();

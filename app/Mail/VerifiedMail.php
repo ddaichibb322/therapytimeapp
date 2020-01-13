@@ -2,23 +2,26 @@
 
 namespace App\Mail;
 
+use App\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Lang;
 
-class TempRegisteredMail extends Mailable
+
+class VerifiedMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $user;
+    public $user;
 
     /**
-     * Create a new message instance.
+     * 新しいメッセージインスタンスの生成
      *
      * @return void
      */
-    public function __construct($user)
+    public function __construct(User $user)
     {
         $this->user = $user;
     }
@@ -30,9 +33,7 @@ class TempRegisteredMail extends Mailable
      */
     public function build()
     {
-        return $this
-            ->subject('仮登録が完了しました')
-            ->view('email.temp_registered')
-            ->with(['token' => $this->user->email_verify_token,]);
+        return $this->subject(Lang::get('message.Mail.Verified.Title'))
+        ->view('email.verified');
     }
 }

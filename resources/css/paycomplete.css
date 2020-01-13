@@ -1,0 +1,19 @@
+.paycomplete {
+    margin: 0 auto 40px;
+    padding-bottom: 35px; 
+    width: 80%;
+}
+
+.paycomplete__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.paycomplete__message {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}

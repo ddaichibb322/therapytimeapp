@@ -4,20 +4,32 @@
 }
 
 .sidebar-userinfo {
-    padding: 2rem 2rem;
-    background-color: #fff;
-    margin-bottom: 1.5rem;
-
-}
-.sidebar-username {
-    text-align: center;
-    font-size: 1.2rem;
+    margin-bottom: 30px;
+    background-color: #f3f3f3;
+    padding: 20px 20px;
+    line-height: 2;
+    border-radius: 3px;
 }
 
-.sidebar-coursename {
+.sidebar-username-title {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
+
+.sidebar-username {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar-coursename-title {
+    font-size: 0.8rem;
+}
+.sidebar-coursename {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 .sidebar-userinfo-hr {
     background-color: #F0F0F0;
     margin-bottom: 2rem;
@@ -38,6 +50,9 @@
 .sidebar__textarea {
     border-radius: 3px;
     line-height: 1.2;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    resize: none;
 }
 
 .sidebar-form {

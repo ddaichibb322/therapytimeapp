@@ -17,7 +17,7 @@
                     </li>
                     @endauth
                     <li class="nav-item mr-3">
-                        <a class="nav-link" href="{{ route('plan') }}"><i class="fas fa-yen-sign icon"></i>プラン</a>
+                        <a class="nav-link" href="{{ route('plan') }}"><i class="fas fa-yen-sign icon"></i>料金プラン</a>
                     </li>
                     @auth
                     <li class="nav-item mr-3">

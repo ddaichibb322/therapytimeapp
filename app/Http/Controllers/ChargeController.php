@@ -24,8 +24,6 @@ class ChargeController extends Controller
 
     public function index($course_cd)
     {
-        
-
         if (empty($course_cd)) {
             abort(404);
         }
@@ -58,7 +56,6 @@ class ChargeController extends Controller
 
     public function createSub(Request $request)
     {
-        
         $env = config('app.env');
 
         $apiKeySec = '';

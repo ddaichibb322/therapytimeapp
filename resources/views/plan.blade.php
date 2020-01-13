@@ -1,6 +1,6 @@
 @extends('layouts.template_1col')
 
-@section('title', 'プラン')
+@section('title', '料金プラン')
 @section('description', '説明文をここに入れる。')
 
 @include('layouts.head')

@@ -1,0 +1,67 @@
+.charge {
+    margin: 0 auto 40px;
+    padding-bottom: 35px; 
+    width: 80%;
+}
+
+.charge__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.charge__plan {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.charge__plan-name {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.charge__monthly-amount {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.charge__monthly-amount-price {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.charge__form {
+    text-align:center;
+}
+
+button.stripe-button-el,
+button.stripe-button-el>span {
+    color: #fff;
+    background: #7C41CD;
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    transition: all 0.3s 0s ease;
+    width: 160px;
+    height: 50px;
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+
+
+button.stripe-button-el:hover,
+button.stripe-button-el>span:hover,
+button.stripe-button-el:active,
+button.stripe-button-el>span:active,
+button.stripe-button-el:focus,
+button.stripe-button-el>span:focus {
+    background: #492280!important;
+    border: 0!important;
+}

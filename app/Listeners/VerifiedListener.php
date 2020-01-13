@@ -2,14 +2,14 @@
 
 namespace App\Listeners;
 
-use App\Mail\RegisteredMail;
+use App\Mail\VerifiedMail;
 use App\User;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Mail;
 
-class RegisteredListener
+class VerifiedListener
 {
     /**
      * Create the event listener.
@@ -31,6 +31,6 @@ class RegisteredListener
     {
         $user = $event->user;
         Mail::to($user->email)
-            ->send(new RegisteredMail($user));
+            ->send(new VerifiedMail($user));
     }
 }
