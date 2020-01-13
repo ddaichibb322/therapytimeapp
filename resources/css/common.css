@@ -3,14 +3,17 @@ html,body {
 	background: white;
 	line-height: 1.6;
 	margin: 0;
-	padding: 0;
-    font-family: Quicksand, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+	padding: 0;    
     overflow: scroll;
     color: #444;
 }
 
-pre {
+* {
     font-family: Quicksand, "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+    letter-spacing: 1.2px;
+}
+
+pre {    
     line-height: 1.6;
     overflow: scroll;
     color: #444;
@@ -64,7 +67,7 @@ a:hover, a:focus, a:active {
 /* header bar start */
 .nav-item .icon {
     font-size: 0.8rem;
-    margin-right: 0.25rem;
+    margin-right: 0.4rem;
     margin-bottom: 0.0rem;
 }
 

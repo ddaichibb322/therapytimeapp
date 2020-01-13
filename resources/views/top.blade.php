@@ -35,13 +35,7 @@
 </section> -->
 <section class="top-section">
     <h2 class="top-section-title">瞑想に、効果はない？</h2>
-    <p class="top-section-text">「瞑想に効果はあるのか？」と多くの方は疑われると思います。<br>
-        一方で、海外では世界的企業のトップやセレブ、スポーツ選手などの間で瞑想が人気となっています。<br>
-        なぜそのような人たちが、こぞって瞑想に取り組むのでしょうか。<br>
-        様々な理由があると思いますが、共通して、<br>
-        「人生をより豊かにするために、内面（精神面）からアプローチしたい。」という場合が多いです。<br>
-        過去に例がないほど物質的に豊かになった現代ですが、あなたは本当に幸せと言い切れますか？<br>
-        なぜか満たされない気持ちになることはないでしょうか。<br>
+    <p class="top-section-text">　あなたは、「瞑想に効果はあるのか？」と疑ったことはありませんか？<br>　海外では世界的企業のトップやセレブ、プロスポーツ選手などの間でマインドフルネス瞑想が大変な人気となっています。なぜそのような成功者たちが、こぞって瞑想に取り組むのでしょうか。<br>　理由は様々ですが、共通して、「人生をより豊かにするために、内面（精神面）からアプローチしたい。」という場合が多いです。<br>　過去に例がないほど物質的に豊かになった現代ですが、あなたは本当に幸せと言い切れますか？なぜか満たされない気持ちになることはないでしょうか。
     </p>
 </section>
 <section class="top-section--bg-gray">
@@ -89,7 +83,7 @@
     <!-- <p class="top-section-text--width-img">瞑想を行う方法は多数あります。<br>例えば、瞑想教室に通ったり、本を読んで独学で取り組むこともできます。<br>その中で、セラピータイムが多くの人に選ばれるのには以下の理由があります。</p> -->
     <div class="top-section__merits">
         <div class="top-section__merit-container">
-            <h3 class="top-section__merit-title">動画コンテンツを見ながら、だれでもすぐに本格瞑想！</h3>
+            <h3 class="top-section__merit-title">動画教材で、だれでもすぐに本格瞑想！</h3>
             <div class="top-section__merit-img-container"><img class="top-section__merit-img--1" src="/img/top-merit1.svg" alt=""></div>
 
             <p class="top-section__merit-desc">これから瞑想を始める方も、すでに取り組んでいる方も、瞑想ツールに高額なお金を払う必要はありません。瞑想は、継続的に取り組む方に多くの効果をもたらすので、極力コストを抑えながら取り組めるセラピータイムが選ばれます。</p>
@@ -102,7 +96,12 @@
     </div>
 </section>
 
-
+<section class="top-section">
+    <h2 class="top-section-title">Awereness Instituteとの協賛</h2>
+    <div class="top-section-cooperation"><img class="top-section-cooperation-img" src="/img/cooperation.png" alt=""></div>
+    <p class="top-section-text">　セラピータイムが提供する瞑想動画教材は、米国催眠療法協会および米国催眠士協会の公式認定スクールであるAwereness Instituteの代表・澤 璃子さんの手によって、全て制作されています。<br>　Awereness Instituteとは、催眠療法を始めとして、ヒプノセラピーやマインドフルネス瞑想といった精神や意識に関する研究を日々行ない、優秀な生徒も数多く所属する機関です。<br>　セラピータイムは、実績豊富なAwereness Instituteの全面協力のもと、高品質なサービスをご提供いたします。<br>
+    </p>    
+</section>
 
 <section class="top-section">
     <h2 class="top-section-title">セラピータイムが選ばれる4つの理由</h2>

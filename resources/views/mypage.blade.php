@@ -14,7 +14,7 @@
     <div class="news">
         <h3 class="news__title">お知らせ</h3>
         <div class="news__items">
-            <p class="news__item">2020-01-10 TherapyTimeのアプリをWeb上で公開開始しました。</p>
+            <p class="news__item">2020-01-10 Therapy TimeのアプリをWeb上で公開開始しました。</p>
         </div>
     </div>
     <div class="userinfo">
