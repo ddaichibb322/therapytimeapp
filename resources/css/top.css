@@ -5,11 +5,6 @@
     position: relative;
 }
 
-.empty-box {    
-    width: 100vw;
-    height: 100vh;
-}
-
 .navbar-brand {
     font-family: 'Abril Fatface', cursive;
 }
@@ -102,7 +97,7 @@
     left: 11.4%;
     transform: translateY(-50%);
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 2;
     color: #fff;
     display: inline-block;
@@ -207,12 +202,14 @@
 }
 
 .top-section__reason {
+    width: 100%;
+    margin: 0 auto;
     flex-basis: 20%;
 }
 
 .top-section__reason-img-container {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 210px;
+    margin: 0 auto 20px;
     position: relative;
 
 }
@@ -328,4 +325,107 @@
 	background: url("/img/top-list-style.png") left 0px top 1.5rem no-repeat;
     background-size: 1.5rem;
     font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .top__message {
+        font-size: 1.2rem;
+        top: 35%;
+    }
+
+    .top__button {
+        top: 52.5%;
+        padding: 15px 15px;
+        font-size: 1rem;
+    }
+
+    .top__img {
+        height: 50vh;
+    }
+
+    .top-assertion {
+        height: 70px;
+    }
+
+    .top-assertion__li {
+        font-size: 1rem;
+    }
+ 
+    
+    .top-section, .top-section--bg-gray {
+        padding: 40px 25px;
+    }
+    
+    .top-section-title {
+        margin-bottom: 25px;
+        padding: 5px;
+        font-size: 1.4rem;
+    }
+
+    .top-section-text {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .top-section__reasons {
+        display: block;
+    }
+
+    .top-section__reason {
+        margin-bottom: 30px;
+    }
+
+    .top-section__reason-title {
+        font-size: 1.5rem;
+    }
+
+    .top-section__reason-desc {
+        width: 210px;
+        font-size: 1rem;        
+    }
+
+    .top-section__merits {
+        display: block;       
+        padding-top: 0;
+    }
+
+    .top-section__merit-title {
+        margin-bottom: 30px;
+    }
+
+    .top-section__merit-desc {
+        width: 100%;;
+
+    }
+
+    .top-section__merit-img--1 {
+        padding-top: 0px;
+    }
+
+    .top-section__merit-img--2 {
+        padding-top: 0px;
+    }
+
+    .top-section__merit-img-container {
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .top-section__merit-container:first-child {
+        margin-bottom: 50px;
+    }
+
+    .top-section__reason-ul {
+        margin-bottom: 30px;
+    }
+
+    .top-section__reason-li {
+        font-size: 1.2rem;
+        padding-left: 25px;
+        background-size: 1.2rem;
+        background-position-y: 1.2rem;
+    }
+
 }

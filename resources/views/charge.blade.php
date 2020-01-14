@@ -21,6 +21,8 @@
     <h2 class="charge__title">決済ページ</h2>
     <p class="charge__plan">コース名&nbsp<span class="charge__plan-name">{{ $course->name }}</span></p>
     <p class="charge__monthly-amount">月額&nbsp<span class="charge__monthly-amount-price">{{ number_format($course->price) }}</span>円</p>
+
+    <p class="charge__monthly-desc"></p>
     <form class="charge__form" action="{{ route('charge.createsub') }}" method="POST">
         @csrf
         <input type="hidden" name="course_cd" value="{{ $course->course_cd }}">

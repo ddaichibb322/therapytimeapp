@@ -29,6 +29,7 @@ class ChargeController extends Controller
         }
 
         try {
+            // コースコードがなければエラーページへ
             $course = Course::where('course_cd', $course_cd)->first();
             if (empty($course)) {
                 abort(404);
@@ -36,6 +37,7 @@ class ChargeController extends Controller
         } catch(Exception $e){
             abort(404);
         }
+        
 
         $env = config('app.env');
         $apiKeyPub = '';

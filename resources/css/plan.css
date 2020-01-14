@@ -22,7 +22,7 @@
     padding: 40px;
     border-radius: 3px;
     background-color: #fff;
-    width: 40%;
+    flex-basis: 40%;
 }
 
 .plan-card__title {
@@ -45,7 +45,7 @@
 
 .plan-card__discription {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 20px;
     width: 100%;
     background-color: #f3f3f3;
@@ -82,7 +82,7 @@
 
 .plan-card__detail-table {
     border-bottom: .1px solid grey;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .plan-card__detail-table-head-tr {
@@ -121,4 +121,14 @@
     border-bottom: none;
     border-top: .1px solid grey;
     
+}
+
+@media screen and (max-width:768px) {
+    .plan-section__container {
+        display: block;
+    }
+
+    .plan-card {
+        margin-bottom: 30px;
+    }
 }

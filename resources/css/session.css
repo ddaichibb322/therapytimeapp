@@ -241,3 +241,9 @@
     margin-bottom: 40px;
     font-size: 0.9rem;
 }
+
+@media screen and (max-width:768px) {
+    .session-content {
+        display: block;
+    }   
+}
