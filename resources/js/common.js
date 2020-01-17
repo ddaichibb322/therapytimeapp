@@ -2,6 +2,8 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 import '@fortawesome/fontawesome-free/js/regular';
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // @media screen and (max-width: 768px) と同じ
     var mql = window.matchMedia('screen and (max-width: 768px)');
@@ -30,3 +32,24 @@ document.addEventListener('DOMContentLoaded', function () {
     mql.addListener(checkBreakPoint);
     checkBreakPoint(mql);
 });
+
+$(function () {
+    'use strict';
+    var menuOpen = 'menu-open';
+
+    var show = document.getElementById('show');
+    //#showを取得
+    var hide = document.getElementById('hide');
+    //#hideを取得
+
+    show.addEventListener('click', function () {
+        //showをクリックした時bodyに.menu-openをつける
+        $('body').addClass(menuOpen);
+    });
+
+    hide.addEventListener('click', function () {
+        //hideをクリックした時
+        $('body').removeClass(menuOpen);
+    });
+
+})();

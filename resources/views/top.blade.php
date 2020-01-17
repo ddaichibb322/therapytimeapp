@@ -97,9 +97,9 @@
 </section>
 
 <section class="top-section">
-    <h2 class="top-section-title">Awereness Instituteとの協賛</h2>
+    <h2 class="top-section-title">Awareness Instituteとの協賛</h2>
     <div class="top-section-cooperation"><img class="top-section-cooperation-img" src="/img/cooperation.png" alt=""></div>
-    <p class="top-section-text">　セラピータイムが提供する瞑想動画教材は、米国催眠療法協会および米国催眠士協会の公式認定スクールであるAwereness Instituteの代表・澤 璃子さんの手によって、全て制作されています。<br>　Awereness Instituteとは、催眠療法を始めとして、ヒプノセラピーやマインドフルネス瞑想といった精神や意識に関する研究を日々行ない、優秀な生徒も数多く所属する機関です。<br>　セラピータイムは、実績豊富なAwereness Instituteの全面協力のもと、高品質なサービスをご提供いたします。<br>
+    <p class="top-section-text">　セラピータイムが提供する瞑想動画教材は、米国催眠療法協会および米国催眠士協会の公式認定スクールであるAwareness Instituteの代表・澤 璃子さんの手によって、全て制作されています。<br>　Awareness Instituteとは、催眠療法を始めとして、ヒプノセラピーやマインドフルネス瞑想といった精神や意識に関する研究を日々行ない、優秀な生徒も数多く所属する機関です。<br>　セラピータイムは、実績豊富なAwareness Instituteの全面協力のもと、高品質なサービスをご提供いたします。<br>
     </p>    
 </section>
 

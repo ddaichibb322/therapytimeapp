@@ -39,19 +39,24 @@
             </div>
             @endif
         </div>
+        @if (!empty($content_detail_data->outline))
         <div class="session-detail__info">
             <h3 class="session-detail__subtitle">セッションの概要</h3>
             <p class="session-detail__description">{{ $content_detail_data->outline }}</p>
         </div>
+        @endif
+        @if (!empty($content_detail_data->caution))
         <div class="session-detail__info">
             <h3 class="session-detail__subtitle">注意事項</h3>
             <p class="session-detail__description">{{ $content_detail_data->caution }}</p>
         </div>
+        @endif
+        @if (!empty($content_detail_data->supplement))
         <div class="session-detail__info">
             <h3 class="session-detail__subtitle">補足</h3>
             <p class="session-detail__description">{{ $content_detail_data->supplement }}</p>
         </div>
-
+        @endif
     </div>
     @endif
 

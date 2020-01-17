@@ -54,3 +54,35 @@
     margin: 0 auto;
     text-align: right;
 }
+
+@media screen and (max-width:768px) {
+    
+    .footer__nav {        
+        width: 90%;
+        height: auto;
+    }
+
+    .footer, .footer__nav, .footer__menu {
+        display: block;
+    }
+
+    .footer__menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer__menu-item {
+        border: none;
+        margin-bottom: 10px;
+
+    }
+
+    .footer-copyright {
+        display: block;
+        width: 90%;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+
+}
