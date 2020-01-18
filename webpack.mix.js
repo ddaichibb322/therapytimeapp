@@ -12,7 +12,60 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+   .copyDirectory('resources/img', 'public/img')
    .sass('resources/sass/app.scss', 'public/css')
-   .styles([
-      'resources/css/*.css'
-  ], 'public/css/app.css');
+   .options({
+      processCssUrls: false,
+      postCss: [
+         require('css-mqpacker')()
+      ]
+   })
+
+   .browserSync({
+      proxy: 'http://localhost:8000',
+      host: 'localhost',
+      open: true,
+      watchOptions: {
+         usePolling: false
+      },
+      files: [
+         'app/**/*.php',
+         'resources/views/**/*.php',
+         'public/js/**/*.js',
+         'public/css/**/*.css'
+      ]
+   })
+
+   .webpackConfig({
+      module: {
+         rules: [
+            { // JavaScript Prettier Setting
+               test: /\.js$/,
+               loader: 'prettier-loader',
+               options: { // Prettier Options https://prettier.io/docs/en/options.html
+                  singleQuote: true,
+                  semi: false
+               }
+            },
+            { // Allow .scss files imported glob
+               test: /\.scss/,
+               loader: 'import-glob-loader'
+            },
+            { // Sass Prettier Setting
+               test: /\.scss$/,
+               loader: 'prettier-loader',
+               options: {
+                  parser: "postcss"
+               }
+            }
+         ]
+      }
+   })
+
+
+if (mix.inProduction()) {
+   // 本番のみブラウザキャッシュ対策
+   mix.version();
+} else {
+   mix.sourceMaps();
+}

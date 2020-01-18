@@ -9,7 +9,8 @@
 
 @section('content')
 <section class="top">
-    <img class="img top__img" src="/img/top.jpg" alt="瞑想する人">
+    <img class="img top__img--pc" src="/img/top.jpg" alt="PC用トップ画像">
+    <img class="img top__img--sp" src="/img/top-sp.jpg" alt="スマホ用トップ画像">
     <p class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」を作るための<br>オンライン瞑想スクールです。</p>
     <a class="top__button" href="/register">まずは無料で登録</a>
     <div class="top-assertion">

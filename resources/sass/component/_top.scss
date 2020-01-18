@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
-
-
 .top {
     position: relative;
 }
 
 .navbar-brand {
     font-family: 'Abril Fatface', cursive;
+}
+
+.top__img--pc {
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.top__img--sp {
+    height: 50vh;
+    object-fit: cover;
+    display: none;
 }
 
 .top__img {
@@ -330,19 +340,24 @@
 
 @media screen and (max-width:768px) {
 
+    .top__img--pc {
+        display: none;
+    }
+
+    
+    .top__img--sp {
+        display: block;
+    }
+
     .top__message {
         font-size: 1.2rem;
-        top: 35%;
+        top: 40%;
     }
 
     .top__button {
-        top: 52.5%;
+        top: 55%;
         padding: 15px 15px;
         font-size: 1rem;
-    }
-
-    .top__img {
-        height: 50vh;
     }
 
     .top-assertion {
