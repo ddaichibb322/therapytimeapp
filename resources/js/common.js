@@ -45,11 +45,13 @@ $(function () {
     show.addEventListener('click', function () {
         //showをクリックした時bodyに.menu-openをつける
         $('body').addClass(menuOpen);
+        $('html').addClass('scroll-prevent');
     });
 
     hide.addEventListener('click', function () {
         //hideをクリックした時
         $('body').removeClass(menuOpen);
+        $('html').removeClass('scroll-prevent');
     });
 
-})();
+});
