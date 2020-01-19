@@ -13,6 +13,12 @@ class TopController extends Controller
      */
     public function index()
     {
+        // 有料会員の場合はマイページへ
+        $common = new \Common;
+        if ($common->isPaidMember()) {
+            return redirect()->route('mypage');
+        }
+
         return view('top');
     }
 }

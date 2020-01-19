@@ -15,13 +15,36 @@
 
 .news__items {
     background-color: #f3f3f3;
-    padding: 10px 40px;
+    padding: 20px 40px;
     line-height: 2;
     border-radius: 3px;
     margin-bottom: 40px;
 }
 
 .news__item {
+    font-size: 0.9rem;    
+    margin-bottom: 5px;
+}
+
+.news__item:last-child {
+    margin-bottom: 0;
+}
+
+.user-course__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-course__items {
+    background-color: #f3f3f3;
+    padding: 20px 40px;
+    line-height: 2;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.user-course__item {
     font-size: 0.9rem;
     font-weight: bold;
 }
@@ -51,7 +74,8 @@
     margin-bottom: 30px;
 }
 
-.mypage-form .form-group > label {    
+.mypage-form .form-group > label {   
+    font-weight: bold; 
     margin-bottom: 5px;
 }
 
@@ -84,4 +108,17 @@
     font-size: 0.75rem;
     display: block;
     clear: both;
+}
+
+.user-course__link-container {
+    float: block;
+}
+
+@media screen and (max-width:768px) {
+
+    .mypage {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
 }

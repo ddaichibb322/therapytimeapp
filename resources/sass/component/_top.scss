@@ -248,8 +248,8 @@
 }
 
 .top-section__reason-desc {
-    width:80%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -273,7 +273,7 @@
     padding: 25px;
     border-radius: 3px;
     background-color: #E9E9E9;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .panel-voice-title {
@@ -288,15 +288,20 @@
     font-size: 1rem;
     line-height: 2rem;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .panel-qa {
     text-align: left;
     padding: 25px;
+    padding-bottom: 0;
     border-radius: 3px;
     background-color: #fff;
     margin-bottom: 10px;
+}
+
+.panel-qa:last-of-type {
+    margin-bottom: 60px;
 }
 
 .panel-voice-username {
@@ -318,7 +323,7 @@
     font-size: 1rem;
     line-height: 2rem;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .top-section__reason-ul {

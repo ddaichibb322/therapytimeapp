@@ -28,8 +28,8 @@ Route::post('/contact/sendmail', 'ContactController@sendmail')->name('contact.se
 
 Route::get('/mypage', 'MypageController@index')->name('mypage');
 Route::post('/mypage/{id}', 'MypageController@update')->name('mypage.update');
-Route::get('changepassword', 'MypageController@showChangePasswordForm');
-Route::post('changepassword', 'MypageController@changePassword')->name('changepassword');
+Route::get('/changepassword', 'MypageController@showChangePasswordForm');
+Route::post('/changepassword', 'MypageController@changePassword')->name('changepassword');
 
 
 Route::get('/session', 'SessionController@show')->name('session');
@@ -40,3 +40,5 @@ Route::post('/charge/createsub', 'ChargeController@createSub')->name('charge.cre
 
 
 Route::post('/opinion/sendmail', 'OpinionController@sendmail')->name('opinion.sendmail');
+
+Route::get('/sitemap', 'SiteMapController@sitemap'); 

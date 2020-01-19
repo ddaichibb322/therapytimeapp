@@ -1,6 +1,6 @@
 .contact {
     margin: 0 auto;
-    width: 50%
+    width: 50%;
 }
 
 .contact__title {
@@ -16,3 +16,12 @@
     margin-top: 20px;
 }
 
+
+
+@media screen and (max-width:768px) {
+
+    .contact {
+        width: 90%;
+    }
+    
+}

@@ -14,7 +14,17 @@
     <div class="news">
         <h3 class="news__title">お知らせ</h3>
         <div class="news__items">
+            <p class="news__item">2020-01-17 セッション「目標を達成する
+                」を追加しました。</p>
             <p class="news__item">2020-01-10 Therapy TimeのアプリをWeb上で公開開始しました。</p>
+        </div>
+    </div>
+    <div class="user-course">
+        <h3 class="user-course__title">入会中のプラン</h3>
+        <div class="user-course__items">
+            {{ $course_name }}@if($course_price !=0 )（ {{ $course_price }}円/月 ）@endif
+            @notpaiduser（<a href="plan" class="user-course__link">コースへの入会はこちらから</a>）@endnotpaiduser
+            @paiduser（<a href="contact" class="user-course__link">コース変更はこちらから</a>）@endpaiduser
         </div>
     </div>
     <div class="userinfo">
@@ -102,7 +112,7 @@
                 </div>
                 <div class="mypage-form__submit-button-container">
                     <button type="submit" class="btn btn-primary mypage-form__submit-button">更新する</button>
-                    <a href="" class="mypage-form__password-change-link">パスワード変更はこちらから</a>
+                    <a href="changepassword" class="mypage-form__password-change-link">パスワード変更はこちらから</a>
                 </div>
             </form>
         </div>

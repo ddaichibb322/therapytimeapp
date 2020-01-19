@@ -13,7 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // PCから、トップページを開いた場合のみ、
     // 初期表示時はヘッダーの背景色は無色透明にする
     if (!mql.matches && location.pathname === '/') {
+      // ヘッダーはスクロール時にフェードインさせる
       $(window).on('load scroll', function() {
+        // transitionを設定
+        $header.css({
+          transition: 'all 0.5s ease',
+          '-webkit-transition': 'all 0.5s ease',
+          '-moz-transition': 'all 0.5s ease',
+          '-o-transition': 'all 0.5s ease'
+        })
         var value = $(this).scrollTop()
         if (value > threshold) {
           $header.addClass(bgPurple)

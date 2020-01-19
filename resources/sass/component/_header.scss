@@ -4,7 +4,6 @@
     left: 0;
     width: 100%;
     z-index: 9999;
-    transition: all 0.5s ease;
 }
 
 #show,#hide{
@@ -55,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-bottom: 0;
 }
 
 .header__menu-item-link .icon {
@@ -96,6 +96,7 @@
         background-color: #7C41CD;
         padding: 25px 5%;
         transition: all 0.3s;
+        padding: 18px 26.25px 0;
     }
 
     .header__menu-item {
@@ -122,6 +123,7 @@
     .menu-open .header__menu{
         display: block;
         padding-top: 20px;
+        padding-left: 0;
     }
 }
 

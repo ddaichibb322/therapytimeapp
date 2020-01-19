@@ -27,6 +27,7 @@
     margin-left: 30px;
 }
 
+
 /* .text-page__li {
  
 } */
@@ -52,4 +53,15 @@
 .text-page-table__td {
     padding-left: 15px;
 
+}
+
+@media screen and (max-width:768px) {
+
+    .text-page__ol {
+        margin-left: 0;
+    }
+    
+    .text-page {
+        width: 90%;
+    }
 }

@@ -14,6 +14,14 @@ html,body {
     letter-spacing: 1.2px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
 pre {    
     line-height: 1.6;
     color: #444;
@@ -139,8 +147,8 @@ a:hover, a:focus, a:active {
 /* End hide from IE-mac */
 
 .main-container {
-    min-height: calc(100vh - 110px);
-    margin-top: 55px;
+    min-height: calc(100vh - 140px);
+    margin-top: 60px;
     overflow: hidden;
 }
 
@@ -172,12 +180,16 @@ a:hover, a:focus, a:active {
 
 @media screen and (max-width:768px) {
     html, body {
-        font-size: 75%;
+        font-size: 90%;
     }
 
     .two-cols { 
         width: 90%;
         display: block;
+    }
+
+    .main-container {
+        margin-top: 50px;
     }
     
 }

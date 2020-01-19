@@ -245,5 +245,14 @@
 @media screen and (max-width:768px) {
     .session-content {
         display: block;
-    }   
+    }
+       
+    .session-detail {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .session-thumbnail {
+        margin-bottom: 20px;
+    }
 }

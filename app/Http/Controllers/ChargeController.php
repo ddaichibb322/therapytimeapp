@@ -24,12 +24,19 @@ class ChargeController extends Controller
 
     public function index($course_cd)
     {
+        // コースコードがなければ、不正なURLなので404
         if (empty($course_cd)) {
             abort(404);
         }
 
+        // 有料会員の場合は表示させない
+        $common = new \Common;
+        if ($common->isPaidMember()) {
+            return redirect()->route('mypage');
+        }
+
         try {
-            // コースコードがなければエラーページへ
+            // コースコードからコースデータが取得できなければ、不正なURLなので404
             $course = Course::where('course_cd', $course_cd)->first();
             if (empty($course)) {
                 abort(404);
@@ -121,13 +128,23 @@ class ChargeController extends Controller
 
         }
 
-        
+        // 次回フル課金日(翌月1日)を計算する処理。
+        // 課金サイクルは、当月1日支払い。
+        // 初回（決済完了時）には、次回課金日までの日割り。
+        $dt = new Carbon();
+        $dt->addMonthNoOverflow();
+        $dt->day = 1;
+        $dt->hour = 11;
+        $dt->minute = 0;
+        $dt->second = 0;
 
+        
         // 定期課金を作成
         try {
             \Stripe\Subscription::create([
                 'customer' => $pay_id,
-                'trial_from_plan' => true,
+                'billing_cycle_anchor' => $dt->getTimestamp(), 
+                'trial_from_plan' => false,
                 "items" => [
                     [
                       "plan" => $plan_cd,

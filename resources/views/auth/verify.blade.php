@@ -21,3 +21,5 @@
     </form>
 </div>
 @endsection
+
+@include('layouts.footer')
