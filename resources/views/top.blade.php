@@ -144,7 +144,7 @@
     </div>
     <div class="panel-qa">
         <h2 class="panel-qa-title">Q. 月額制のようですが、初回は日割り計算が行われますか？</h2>
-        <p class="panel-qa-text">はい。毎月1日に当月分の決済が行われますが、月の途中から参加された場合には日割り計算が適用されるので、無駄な料金を支払うことなくサービスをご利用いただけます。</p>
+        <p class="panel-qa-text">はい。通常毎月1日に当月分の決済が行われますが、月の途中から参加された場合には日割り計算が適用されるので、無駄な料金を支払うことなくサービスをご利用いただけます。</p>
     </div>
     <a href="{{ route('register') }}" class="btn btn-big btn-primary">まずは無料で体験してみる</a>
 </section>
