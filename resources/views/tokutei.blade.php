@@ -57,7 +57,7 @@
         </tr>
         <tr class="text-page-table__tr">
             <th class="text-page-table__th">ご解約について</th>
-            <td class="text-page-table__td">解約（退部）は<a href="contact">こちら</a>から行なってください。毎月月末締めの翌月末解約となります。（８月１日〜８月３１日にご連絡いただいた場合、９月末日のご解約となり、９月１日が最終決済日となります。</td>
+            <td class="text-page-table__td">解約（退部）は<a href="contact">こちら</a>からご連絡ください。毎月月末締めの翌月末解約となります。（８月１日〜８月３１日にご連絡いただいた場合、９月末日のご解約となり、９月１日が最終決済日となります。</td>
         </tr>
     </table>
 </div>

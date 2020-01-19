@@ -76,9 +76,8 @@
         </div>
     </div>
 </section>
-<div class="top-section__wave-gray"></div>
 
-<section class="top-section">
+<section class="top-section--bg-gray">
     <h2 class="top-section-title">セラピータイムってどんなアプリ？</h2>
     <!-- <p class="top-section-text--width-img">瞑想を行う方法は多数あります。<br>例えば、瞑想教室に通ったり、本を読んで独学で取り組むこともできます。<br>その中で、セラピータイムが多くの人に選ばれるのには以下の理由があります。</p> -->
     <div class="top-section__merits">
@@ -95,6 +94,7 @@
         </div>
     </div>
 </section>
+<div class="top-section__wave-gray"></div>
 
 <section class="top-section">
     <h2 class="top-section-title">専門家との共同制作</h2>
