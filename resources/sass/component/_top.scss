@@ -15,7 +15,6 @@
 }
 
 .top__img--sp {
-    height: 50vh;
     object-fit: cover;
     display: none;
 }
@@ -254,10 +253,6 @@
 }
 
 
-
-
-
-
 .top-section__wave-gray {    
     background-image: url(/img/wave.svg);
     background-position: top;
@@ -351,6 +346,7 @@
 
     
     .top__img--sp {
+        height: 60vh;
         display: block;
     }
 
@@ -361,7 +357,7 @@
     }
 
     .top__button {
-        top: 60%;
+        top: 56%;
         padding: 15px 15px;
         font-size: 1rem;
     }
@@ -399,7 +395,7 @@
     }
 
     .top-section__reason-title {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .top-section__reason-desc {
