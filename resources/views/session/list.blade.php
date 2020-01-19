@@ -1,7 +1,7 @@
 @extends('layouts.template_2col')
 
-@section('title', 'セッション一覧')
-@section('description', '説明文をここに入れる。')
+@section('title', 'セッション一覧 | Therapy Time')
+@section('description', 'セラピータイムは、オンライン瞑想サービスです。動画コンテンツを使って、本格的に瞑想に取り組むことが可能な新しいサービスです。')
 @include('layouts.sidebar')
 
 @include('layouts.head')
