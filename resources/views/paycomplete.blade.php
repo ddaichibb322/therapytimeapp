@@ -9,8 +9,7 @@
 <section class="paycomplete">
     <h2 class="paycomplete__title">決済完了</h2>
     <div class="paycomplete__message">
-        <p>決済に成功しました！<br>瞑想を通して、理想の自分を手に入れましょう
-            ！</p>
+        <p>決済に成功しました！</p>
     </div>
 </section>
 

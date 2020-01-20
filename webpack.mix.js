@@ -11,14 +11,21 @@ const mix = require('laravel-mix');
  |
  */
 
+const sassOptions = (mix.inProduction()) ?
+{outputStyle: 'compressed'} : {};
+
 mix.js('resources/js/app.js', 'public/js')
    .copyDirectory('resources/img', 'public/img')
-   .sass('resources/sass/app.scss', 'public/css')
+   .sass('resources/sass/app.scss', 'public/css', sassOptions)
    .options({
       processCssUrls: false,
       postCss: [
          require('css-mqpacker')()
       ]
+   })
+
+   .autoload({
+      jquery: ['$', 'window.jQuery']
    })
 
    .browserSync({

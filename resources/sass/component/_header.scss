@@ -125,6 +125,25 @@
         padding-top: 20px;
         padding-left: 0;
     }
+
+    .header__log-link:hover, .header__log-link:focus, .header__log-link:active {
+        color: white;
+        opacity: 1;
+    }
+
+    .header__menu-item-link:hover, .header__menu-item-link:focus, .header__menu-item-link:active {
+        color: white;
+        opacity: 1;
+    }
+
+    .header__log {
+        font-size: 0.6rem;
+    }
+    
+    .header__log-link {
+        font-size: 1rem;
+        margin-right: 5px;
+    }
 }
 
 

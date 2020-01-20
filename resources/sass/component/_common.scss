@@ -191,5 +191,14 @@ a:hover, a:focus, a:active {
     .main-container {
         margin-top: 50px;
     }
+
+    .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+        background: #7C41CD;
+    }
+    
+    a:hover, a:focus, a:active {
+        color: #444;
+        text-decoration: none;
+    }
     
 }

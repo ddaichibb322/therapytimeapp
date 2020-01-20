@@ -255,4 +255,15 @@
     .session-thumbnail {
         margin-bottom: 20px;
     }
+
+    .session-thumbnail__link:hover .session-thumbnail__img {
+        filter: brightness(1);
+        transform: none;
+    }
+
+    .session-thumbnail__link:hover .session-thumbnail__hover-text {
+        opacity: 0;
+        transform: none;
+    }
 }
+
