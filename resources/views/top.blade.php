@@ -1,6 +1,6 @@
 @extends('layouts.template_top')
 
-@section('title', 'TOP | Therapy Time')
+@section('title', 'トップページ')
 @section('description', 'セラピータイムは、オンライン瞑想サービスです。動画コンテンツを使って、本格的に瞑想に取り組むことが可能な新しいサービスです。')
 
 @include('layouts.head')

@@ -1,7 +1,7 @@
 @extends('layouts.template_1col')
 
 @section('title', '特定商取引法に基づく表示')
-@section('description', '説明文をここに入れる。')
+@section('description', 'セラピータイムは、オンライン瞑想サービスです。動画コンテンツを使って、本格的に瞑想に取り組むことが可能な新しいサービスです。')
 @include('layouts.head')
 
 @include('layouts.header')

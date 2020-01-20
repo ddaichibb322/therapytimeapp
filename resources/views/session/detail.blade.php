@@ -1,6 +1,6 @@
 @extends('layouts.template_2col')
 
-@section('title', 'セッション一覧')
+@section('title', 'セッション詳細')
 @section('description', '説明文をここに入れる。')
 @include('layouts.sidebar')
 
