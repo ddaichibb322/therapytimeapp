@@ -9,25 +9,24 @@
 
 @section('content')
 <section class="top">
-    <img class="img top__img--pc" src="/img/top.jpg" alt="PC用トップ画像">
-    <img class="img top__img--sp" src="/img/top-sp.jpg" alt="スマホ用トップ画像">
-    <p class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」を作るための<br>オンライン瞑想スクールです。</p>
-    <a class="top__button" href="/register">まずは無料で登録</a>
-    <div class="top-assertion">
-        <ul class="top-assertion__ul">
-            <li class="top-assertion__li">
-                <div>全コンテンツ<br><b>専門家監修</b></div>
-            </li>
-            <li class="top-assertion__li">
-                <div>平均評価<br><i class="fas fa-star"></i><b>4.7</b></div>
-            </li>
-            <li class="top-assertion__li">
-                <div>リピート率<br><b>92%</b></div>
-            </li>
-        </ul>
+    <div class="img top__img">
+        <p class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想スクールです。</p>
+        <a class="top__button" href="/register">まずは無料で登録</a>
+        <div class="top-assertion">
+            <ul class="top-assertion__ul">
+                <li class="top-assertion__li">
+                    <div>全コンテンツ<br><b>専門家監修</b></div>
+                </li>
+                <li class="top-assertion__li">
+                    <div>平均評価<br><i class="fas fa-star"></i><b>4.7</b></div>
+                </li>
+                <li class="top-assertion__li">
+                    <div>リピート率<br><b>92%</b></div>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="empty-box"></div> -->
     </div>
-    <!-- <div class="empty-box"></div> -->
-
 </section>
 <!-- <section class="top-section">
     <div class="top-section-alliance">
