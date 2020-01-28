@@ -42,8 +42,18 @@
 
 <link rel="canonical" href="https://therapy-time.com{{ str_replace(url('/'),'',request()->fullUrl()) }}">
 
+<!-- サイトアイコンの指定 -->
+<link rel="icon" href="{{ asset('/img/icon_16.png') }}" sizes="16x16" type="image/png" /> 
+<link rel="icon" href="{{ asset('/img/icon_32.png') }}" sizes="32x32" type="image/png" />  
+<link rel="icon" href="{{ asset('/img/icon_48.png') }}" sizes="48x48" type="image/png" /> 
+<link rel="icon" href="{{ asset('/img/icon_62.png') }}" sizes="62x62" type="image/png" />
 
+<!-- スマホ用アイコン画像 -->
+<link rel="apple-touch-icon-precomposed" href="{{ asset('/img/icon_150.png') }}" />
 
+<!-- Windows用タイル設定 -->
+<meta name="msapplication-TileImage" content="{{ asset('/img/icon_150.png') }}" />
+<meta name="msapplication-TileColor" content="#7C41CD"/>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="preload" type="text/css" href="{{ mix('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
