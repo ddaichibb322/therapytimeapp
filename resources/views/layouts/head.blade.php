@@ -40,6 +40,10 @@
 <!-- iOSなどスマホで電話番号を自動で電話リンクへ書き換えるのを防ぐ -->
 <meta name="format-detection" content="telephone=no">
 
+<link rel="canonical" href="https://therapy-time.com{{ str_replace(url('/'),'',request()->fullUrl()) }}">
+
+
+
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="preload" type="text/css" href="{{ mix('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
