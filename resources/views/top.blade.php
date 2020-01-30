@@ -10,7 +10,7 @@
 @section('content')
 <section class="top">
     <div class="img top__img">
-        <p class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想スクールです。</p>
+        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想スクールです。</h2>
         <a class="top__button" href="/register">まずは無料で登録</a>
         <div class="top-assertion">
             <ul class="top-assertion__ul">
@@ -78,7 +78,6 @@
 
 <section class="top-section--bg-gray">
     <h2 class="top-section-title">セラピータイムってどんなアプリ？</h2>
-    <!-- <p class="top-section-text--width-img">瞑想を行う方法は多数あります。<br>例えば、瞑想教室に通ったり、本を読んで独学で取り組むこともできます。<br>その中で、セラピータイムが多くの人に選ばれるのには以下の理由があります。</p> -->
     <div class="top-section__merits">
         <div class="top-section__merit-container">
             <h3 class="top-section__merit-title">動画教材で、だれでもすぐに本格瞑想！</h3>

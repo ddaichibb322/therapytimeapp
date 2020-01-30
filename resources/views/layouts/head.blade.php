@@ -15,6 +15,9 @@
 <!-- パフォーマンス向上のため文字のエンコーディングを行う -->
 <meta charset="UTF-8">
 
+<link rel="canonical" href="https://therapy-time.com{{ str_replace(url('/'),'',request()->fullUrl()) }}">
+
+
 @if(App::environment('production'))
 <!-- クリティカルレンダリングパス -->
 <style>
@@ -23,14 +26,17 @@
 @endif
 
 
-
-
-<title>@yield('title') | Therapy Time</title>
-
+<!-- サイトタイトル -->
+@if(\Route::current() -> getName() == 'top')
+<title>Therapy Time | オンライン瞑想サービス</title>
+@else
+<title>@yield('title') | オンライン瞑想の【Therapy Time】</title>
+@endif
+<!-- metaタグ -->
 <meta name="author" content="セラピータイム">
 <meta name="keywords" content="瞑想,マインドフルネス,アプリ">
-<meta name="description" itemprop="description" content="@yield('description')">
-
+<meta name="description" content="@yield('description')">
+<meta name="application-name" content="セラピータイム - もっと人生を豊かにしたい方向けのオンライン瞑想サービス">
 
 
 <!-- IE+8に対して、利用可能な最も互換性の高い最新のエンジンを利用するように指定する -->
@@ -40,7 +46,7 @@
 <!-- iOSなどスマホで電話番号を自動で電話リンクへ書き換えるのを防ぐ -->
 <meta name="format-detection" content="telephone=no">
 
-<link rel="canonical" href="https://therapy-time.com{{ str_replace(url('/'),'',request()->fullUrl()) }}">
+
 
 <!-- サイトアイコンの指定 -->
 <link rel="icon" href="{{ asset('/img/icon_16.png') }}" sizes="16x16" type="image/png" /> 
