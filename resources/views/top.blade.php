@@ -1,7 +1,7 @@
 @extends('layouts.template_top')
 
 @section('title', 'トップページ')
-@section('description', 'セラピータイムは、オンライン瞑想サービスです。動画コンテンツを使って、本格的に瞑想に取り組むことが可能な新しいサービスです。')
+@section('description', 'TherapyTime(セラピータイム)は、あなたの心に「ゆとり」をもたらすオンライン瞑想サービスです。専門家監修の動画コンテンツを用いて、いつでも何度でも手軽に本格瞑想に取り組むことができる、新しい瞑想サービスです。')
 
 @include('layouts.head')
 
@@ -10,7 +10,7 @@
 @section('content')
 <section class="top">
     <div class="img top__img">
-        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想スクールです。</h2>
+        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想サービスです。</h2>
         <a class="top__button" href="/register">まずは無料で登録</a>
         <p class="top__scroll-button js-scroll"><a class="top__scroll-anchor" href="">SCROLL</a></p>
         <div class="top-assertion">
@@ -84,7 +84,7 @@
             <h3 class="top-section__merit-title">動画教材で、だれでもすぐに本格瞑想！</h3>
             <div class="top-section__merit-img-container"><img class="top-section__merit-img--1" src="/img/top-merit1.svg" alt=""></div>
 
-            <p class="top-section__merit-desc">セラピータイムは瞑想を誰でも簡単に行えるような動画コンテンツをご提供しています。高額なお金を払う必要はありません。店舗で行う瞑想は賃料や人件費で必要以上の価格を払う必要がありますし、独学では正しい方法にたどり着くのに時間がかかりすぎます。これから瞑想を始める方も、すでに取り組んでいる方も、セラピータイムなら、専門家の指導下で、安価な値段で本格的な瞑想に取り組めます。</p>
+            <p class="top-section__merit-desc">セラピータイムは瞑想を誰でも簡単に行えるような動画コンテンツをご提供しています。高額なお金を払う必要はありません。店舗で行う瞑想は賃料や人件費で必要以上の価格を払う必要がありますし、独学では正しい方法にたどり着くのに時間がかかりすぎます。これから瞑想を始める方も、すでに取り組んでいる方も、セラピータイムなら専門家の指導下で、お手頃な値段で本格的な瞑想に取り組めます。</p>
         </div>
         <div class="top-section__merit-container">
             <h3 class="top-section__merit-title">「いつでも」「どこでも」「何度でも」瞑想できる！</h3>
