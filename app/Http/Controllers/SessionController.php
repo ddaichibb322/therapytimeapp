@@ -52,7 +52,7 @@ class SessionController extends Controller
         // このセッションを開いたユーザが、このセッションを閲覧可能かどうかを判定するフラグ。閲覧可能ならばtrue。
         $is_viewable = false;
 
-        if (optional($user_data)->is_free == 1) {
+        if (optional($user_data)->free_flg== 1) {
             // 無料招待ユーザであれば視聴可能
             $is_viewable = true;
         } else if ($content_detail_data->viewable_flg == 2) {

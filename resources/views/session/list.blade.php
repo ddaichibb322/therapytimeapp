@@ -33,9 +33,9 @@
 
                 <!-- 視聴可能範囲 -->
                 @if($content->viewable_flg == 2)
-                <div class="session-viewable__all">全員視聴可能</div>
+                <div class="session-viewable__all">全員</div>
                 @elseif($content->viewable_flg == 1)
-                <div class="session-viewable__notpaiduser">無料会員視聴可能</div>
+                <div class="session-viewable__notpaiduser">無料会員</div>
                 @endif
             </div>
         </div>
