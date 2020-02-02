@@ -28,6 +28,8 @@
                 <div class="session-thumbnail__type--spiritual">{{ $content->type->name }}</div>
                 @elseif($content->type->id == 4)
                 <div class="session-thumbnail__type--loveandbeauty">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 5)
+                <div class="session-thumbnail__type--short">{{ $content->type->name }}</div>
                 @endif
                 <!-- タイプ end -->
 
