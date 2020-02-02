@@ -20,7 +20,7 @@
     @endif
     <h2 class="charge__title">決済ページ</h2>
     <p class="charge__plan">コース名&nbsp<span class="charge__plan-name">{{ $course->name }}</span></p>
-    <p class="charge__monthly-amount">月額&nbsp<span class="charge__monthly-amount-price">{{ number_format($course->price) }}</span>円</p>
+    <p class="charge__monthly-amount">月額&nbsp<span class="charge__monthly-amount-price">{{ number_format($course->price) }}</span>円(税込)</p>
 
     <p class="charge__monthly-desc"></p>
     <p class="charge__desc">※下記のボタンをクリックすると、カード情報入力画面が表示されます。</p>
