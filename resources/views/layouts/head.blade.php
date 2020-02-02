@@ -28,9 +28,9 @@
 
 <!-- サイトタイトル -->
 @if(\Route::current() -> getName() == 'top')
-<title>Therapy Time | オンライン瞑想サービス</title>
+<title>TherapyTime | オンライン瞑想サービス</title>
 @else
-<title>@yield('title') | オンライン瞑想の【Therapy Time】</title>
+<title>@yield('title') | オンライン瞑想の【TherapyTime】</title>
 @endif
 <!-- metaタグ -->
 <meta name="author" content="セラピータイム">

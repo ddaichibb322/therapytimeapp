@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class TopController extends Controller
 {
@@ -13,10 +15,9 @@ class TopController extends Controller
      */
     public function index()
     {
-        // 有料会員の場合はマイページへ
-        $common = new \Common;
-        if ($common->isPaidMember()) {
-            return redirect()->route('mypage');
+        if (Auth::check()) {
+            // ログインユーザにLPは見せない。
+            return redirect()->route('session'); 
         }
 
         return view('top');

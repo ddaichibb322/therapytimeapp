@@ -36,9 +36,15 @@
     font-weight: bold;
 }
 
+.charge__desc {
+    width: 55%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
 
 .charge__form {
     text-align:center;
+    margin-top: 20px;
 }
 
 button.stripe-button-el,
@@ -49,7 +55,7 @@ button.stripe-button-el>span {
     outline: none;
     border-radius: 3px;
     transition: all 0.3s 0s ease;
-    width: 160px;
+    width: 300px;
     height: 50px;
     font-size: 1.6rem;
     line-height: 50px;
@@ -64,4 +70,13 @@ button.stripe-button-el:focus,
 button.stripe-button-el>span:focus {
     background: #492280!important;
     border: 0!important;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .charge__desc {
+        width: 90%;
+    }
+
 }

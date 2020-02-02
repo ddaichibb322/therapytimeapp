@@ -12,6 +12,7 @@
     <div class="img top__img">
         <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想スクールです。</h2>
         <a class="top__button" href="/register">まずは無料で登録</a>
+        <p class="top__scroll-button js-scroll"><a class="top__scroll-anchor" href="">SCROLL</a></p>
         <div class="top-assertion">
             <ul class="top-assertion__ul">
                 <li class="top-assertion__li">
@@ -33,7 +34,7 @@
         <p class="top-section-text">Awereness Instituteとの協賛</p>
     </div>
 </section> -->
-<section class="top-section">
+<section id="scroll-target" class="top-section">
     <h2 class="top-section-title">瞑想に、効果はない？</h2>
     <p class="top-section-text"> 「瞑想に効果はあるのか？」と思っていませんか？<br>　日本でまだ瞑想は発展途上ですが、海外では世界的企業のトップやセレブ、プロスポーツ選手などの間で瞑想が大変な人気となっています。<br> そのような成功者たちがこぞって瞑想に取り組むのには、「精神力を向上させて、気持ちに余裕を持たせ、パフォーマンスを高める」という理由が多いです。<br>　世界的に見れば、情報やモノが溢れかえるこの現代に、今の自分自身を打ち破り、理想の人生を手に入れるようとして瞑想に取り組む人は非常に多くいます。<br> 瞑想の効果は、科学的にも証明されていますので、あなたもぜひ一度取り組んでみてはいかがでしょうか。
     </p>
@@ -44,7 +45,7 @@
         <div class="top-section__reason">
             <div class="top-section__reason-img-container">
                 <h3 class="top-section__reason-title">負の感情を抑える</h3>
-                <img class="top-section__reason-img" src="/img/relax.jpg" alt="reason1">
+                <img class="top-section__reason-img" src="/img/relax-2.jpg" alt="reason1">
             </div>
             <p class="top-section__reason-desc">ストレスや不安といった、心を悩ませる負の感情を沈めます。瞑想を通して、あなたを悩ますネガティブな感情や雑念を取り除き、クリアな気持ちを保つことで、より豊かな人生を歩んでいくことができます。</p>
         </div>
@@ -60,7 +61,7 @@
 
             <div class="top-section__reason-img-container">
                 <h3 class="top-section__reason-title">自己肯定感を高める</h3>
-                <img class="top-section__reason-img" src="/img/self-esteem.jpg" alt="reason1">
+                <img class="top-section__reason-img" src="/img/self-esteem-2.jpg" alt="reason1">
             </div>
 
             <p class="top-section__reason-desc">瞑想を通して、過去のトラウマや失敗体験、恥ずかしい記憶といったものから逃げずに受け入れ、自身を肯定する。それによって、確固たる自信を築いていくことができます。</p>
@@ -69,7 +70,7 @@
 
             <div class="top-section__reason-img-container">
                 <h3 class="top-section__reason-title">潜在能力を引き出す</h3>
-                <img class="top-section__reason-img" src="/img/potential.jpg" alt="reason1">
+                <img class="top-section__reason-img" src="/img/potential-2.jpg" alt="reason1">
             </div>
             <p class="top-section__reason-desc">人は得てして自分の可能性を自分で過少に規定しています。瞑想を通して、自分の発揮できる潜在能力に対する心理的な障壁を取り除き、自身の持てる才能を開花させることができます。</p>
         </div>
@@ -95,10 +96,11 @@
 <div class="top-section__wave-gray"></div>
 
 <section class="top-section">
-    <h2 class="top-section-title">専門家との共同制作</h2>
+    <h2 class="top-section-title">専門家による監修・制作</h2>
     <div class="top-section-cooperation"><img class="top-section-cooperation-img" src="/img/cooperation.png" alt=""></div>
-    <p class="top-section-text">　セラピータイムが提供する瞑想動画教材は、米国催眠療法協会および米国催眠士協会の公式認定スクールであるAwareness Instituteの代表・澤 璃子さんによって全て制作されています。<br>　Awareness Instituteとは、催眠療法を始めとして、ヒプノセラピーやマインドフルネス瞑想といった精神や意識に関する研究を日々行ない、優秀な生徒も数多く所属する機関です。<br>　セラピータイムは、実績豊富なAwareness Instituteの全面協力のもと、高品質なサービスをご提供いたします。<br>
+    <p class="top-section-text">　セラピータイムが提供する瞑想動画教材は、米国催眠療法協会および米国催眠士協会の公式認定スクールである<a href="https://www.awareness-ins.com/" alt="Awareness Institute" target="_blank">Awareness Institute</a>の代表・澤 璃子によって全て制作されています。<br>　<a href="https://www.awareness-ins.com/" alt="Awareness Institute" target="_blank">Awareness Institute</a>とは、催眠療法を始めとして、ヒプノセラピーやマインドフルネス瞑想といった精神や意識に関する研究を日々行なう機関です。<br>　セラピータイムは、実績豊富な<a href="https://www.awareness-ins.com/" alt="Awareness Institute" target="_blank">Awareness Institute</a>の全面協力のもと、高品質なサービスをご提供いたします。<br>
     </p>
+    <div class="top-section-link"><a href="https://www.awareness-ins.com/" alt="Awareness Institute" target="_blank">Awareness Instituteのサイトはこちらから</a></div>
 </section>
 
 <section class="top-section">

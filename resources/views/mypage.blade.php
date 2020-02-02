@@ -16,7 +16,7 @@
         <div class="news__items">
             <p class="news__item">2020-01-17 セッション「目標を達成する
                 」を追加しました。</p>
-            <p class="news__item">2020-01-10 Therapy TimeのアプリをWeb上で公開開始しました。</p>
+            <p class="news__item">2020-01-10 TherapyTimeのアプリをWeb上で公開開始しました。</p>
         </div>
     </div>
     <div class="user-course">

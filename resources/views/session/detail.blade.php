@@ -21,19 +21,33 @@
             @else
             <div class="session-movie-not-viewable">
                 <p class="session-movie-not-viewable-message">
-                    このセッションを受けられません。<br>
+                    このセッションを受けられません。
                     <!-- TODO: 文言表示ロジック直す。  -->
-                    @if(!($is_login))
-                    {{-- ログインしていてかつメール認証が完了している場合のみ表示する --}}
+                    @guest
+                    <!-- ログインしていない場合 -->
+                    <br>
                     このセッションは会員登録後に閲覧していただけます。<br>
                     <a href="{{ route('register') }}" class="btn btn-primary session-movie-not-viewable-button">無料で会員登録する</a>
-                    @elseif($is_free)
-                    このセッションに対応したコースに入会後、閲覧していただけます。<br>
+                    @endguest
+
+                    @auth
+                    <!-- ログインしている場合 -->
+                    @paiduser
+                    <!-- 有料会員の場合 -->
+                    <!-- 有料会員であり、かつ視聴可能でないということは、 対応したプランに入会していないといえる。 -->
+                    <br>
+                    こちらのセッションが視聴可能なプランに入会してください。
+                    <br>
                     <a href="{{ route('plan') }}" class="btn btn-primary session-movie-not-viewable-button">料金プランを見る</a>
-                    @else
-                    お客様が加入されているコースでは閲覧できません。このセッションに対応したコースに変更していただくと、閲覧可能となります。<br>
+                    @endpaiduser
+
+                    @notpaiduser
+                    <!-- 有料会員ではない場合 -->
+                    <br>
+                    こちらのセッションは有料会員のみ視聴可能です。<br>
                     <a href="{{ route('plan') }}" class="btn btn-primary session-movie-not-viewable-button">料金プランを見る</a>
-                    @endif
+                    @endnotpaiduser
+                    @endauth
                 </p>
 
             </div>

@@ -9,7 +9,7 @@
 @section('content')
 <div class="password-reset">
     <h2 class="password-reset__main-title">パスワードを忘れた場合</h2>
-    <p class="password-reset__desc">パスワードをリセットします。<br>Therapy Timeに登録しているメールアドレスを入力してください。<br>パスワード再設定用リンクを送信します。</p>
+    <p class="password-reset__desc">パスワードをリセットします。<br>TherapyTimeに登録しているメールアドレスを入力してください。<br>パスワード再設定用リンクを送信します。</p>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

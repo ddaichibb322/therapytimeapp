@@ -15,9 +15,9 @@ class SessionController extends Controller
     public function show()
     {
         $user_data = Auth::user();
-        $contents_db_data = Content::all();
+        $contents_db_data = Content::orderBy('sort', 'asc')->get();
         $courses_db_data = Course::all();
-
+        
         $viewables_data = $this->createViewablesData();
         
         $common = new \Common;
@@ -36,6 +36,12 @@ class SessionController extends Controller
     {
         $user_data = Auth::user();
         $content_detail_data = Content::find($id);
+        // paymentテーブルから最新のレコードを取り出す。
+        $payment_db_data = Payment::where('user_id', optional($user_data)->id)
+        ->where('invalid_flg', 0)
+        ->where('del_flg', 0)
+        ->orderBy('created_at', 'desc')
+        ->first();
 
         if (empty($content_detail_data)) {
             return redirect()->route('session');
@@ -43,36 +49,18 @@ class SessionController extends Controller
 
         $viewables_data = $this->createViewablesData();
 
-        // このセッションを開いたユーザが、このセッションを閲覧可能ならばtrue
+        // このセッションを開いたユーザが、このセッションを閲覧可能かどうかを判定するフラグ。閲覧可能ならばtrue。
         $is_viewable = false;
-        // ログインしていてかつメール認証も完了していればtrue
-        $is_login = false;
-        // 無料会員ならばtrue
-        $is_free = false;
 
-        $payment_db_data = '';
-        if (Auth::check() && optional(Auth::user())->hasVerifiedEmail()) {
-             // ログインしていてかつメール認証も完了している
-            $is_login = true;
-            $payment_db_data = Payment::where('user_id', $user_data->id)
-                ->where('invalid_flg', 0)
-                ->where('del_flg', 0)
-                ->orderBy('created_at', 'desc')
-                ->first();
-
-            if (empty($payment_db_data)) {
-                // paymentテーブルにレコードがなければ無料会員
-                $is_free = true;
-            }
-        }
-
-        if ($content_detail_data->viewable_flg == 2) {
-            // 全員視聴可能
+        if (optional($user_data)->is_free == 1) {
+            // 無料招待ユーザであれば視聴可能
+            $is_viewable = true;
+        } else if ($content_detail_data->viewable_flg == 2) {
+            // 誰でも（非会員でも)視聴可能
             $is_viewable = true;
         } else if ($content_detail_data->viewable_flg == 1) {
-            // 会員であれば視聴可能
-            // ログインしていれば会員と判断
-            if ($is_login) {
+            // ユーザー登録とメールアドレス認証が完了していれば視聴可能
+            if (Auth::check() && optional($user_data)->hasVerifiedEmail()) {
                 $is_viewable = true;
             }
         } else {
@@ -89,15 +77,14 @@ class SessionController extends Controller
         return view('session.detail', [
             'user_data' => $user_data, 
             'content_detail_data' => $content_detail_data,
-            'is_viewable' => $is_viewable, 
-            'is_login' => $is_login, 
-            'is_free' => $is_free, 
+            'is_viewable' => $is_viewable,
             'course_name' => $course_name,
         ]);
     }
 
     /*
-    * 「type_id => course_idの配列」 の配列を作る
+    * コンテンツのタイプと、そのタイプを閲覧可能なコースの組み合わせを作る。
+    * 「type_id => course_idの配列」 の配列を返す。
     */
     private function createViewablesData() 
     {

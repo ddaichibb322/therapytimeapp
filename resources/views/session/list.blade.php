@@ -17,16 +17,27 @@
     @foreach ($contents_data as $content)
     <div class="session">
         <div class="session__title-container">
-            <a class="session__title" href="{{ url('session/' . $content->id) }}">{{ $content->name }}</a>
-            <div class="@if($content->type->id == 1)
-session-thumbnail__type--healing
-@elseif($content->type->id == 2)
-session-thumbnail__type--coaching
-@elseif($content->type->id == 3)
-session-thumbnail__type--spiritual
-@elseif($content->type->id == 3)
-session-thumbnail__type--loveandbeauty
-@endif">{{ $content->type->name }}</div>
+            <a class="session__title" href="{{ url('session/' . $content->id) }}">{{ mb_strimwidth($content->name, 0, 50, '...', 'UTF-8') }}</a>
+            <div class="session__tags">
+                <!-- タイプ start -->
+                @if($content->type->id == 1)
+                <div class="session-thumbnail__type--healing">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 2)
+                <div class="session-thumbnail__type--coaching">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 3)
+                <div class="session-thumbnail__type--spiritual">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 4)
+                <div class="session-thumbnail__type--loveandbeauty">{{ $content->type->name }}</div>
+                @endif
+                <!-- タイプ end -->
+
+                <!-- 視聴可能範囲 -->
+                @if($content->viewable_flg == 2)
+                <div class="session-viewable__all">全員視聴可能</div>
+                @elseif($content->viewable_flg == 1)
+                <div class="session-viewable__notpaiduser">無料会員視聴可能</div>
+                @endif
+            </div>
         </div>
         <div class="session-content">
             <div class="session-thumbnail">
@@ -56,8 +67,8 @@ session-thumbnail__type--loveandbeauty
                             @endforeach
                         @endif
                     </div> -->
-                <p class="session-info__outline">{{ $content->outline }}</p>
-
+                <p class="session-info__outline">{{ mb_strimwidth($content->outline, 0, 200, '...', 'UTF-8') }}</p>
+                <a href="{{ url('session/' . $content->id) }}" class="session-info__outline-span">詳細を見る</a>
             </div>
         </div>
     </div>

@@ -62,6 +62,59 @@
     
 } 
 
+.top__scroll-button {
+    position: absolute;
+    width: 100%;
+    bottom: 120px;
+    text-align: center;
+}
+
+.top__scroll-anchor {
+    position: relative;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 0 20px;
+    opacity: 0.8;
+}
+
+.top__scroll-anchor:hover, .top__scroll-anchor:focus, .top__scroll-anchor:active{
+    color: #fff;
+    opacity: 0.8;
+}
+
+/*矢印を作成する*/
+.top__scroll-anchor:before{
+    content: "";
+    opacity: 0.8;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    animation: scrollButtonMove 2s infinite;
+}
+
+/*矢印をアニメーションする*/
+@keyframes scrollButtonMove {
+    0% {
+      transform: rotate(45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+    40% {
+      transform: rotate(45deg) translate(0, 0);
+    }
+}
+
 .top-assertion {
     background-color: #fff;
     opacity: 0.7;
@@ -145,6 +198,14 @@
     line-height: 2rem;
     margin: 0 auto;
     width: 50%;
+}
+
+.top-section-link {
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: right;
+    width: 50%;
+    font-size: 0.8rem;
 }
 
 .top-section-text--width-img {
@@ -329,6 +390,8 @@
     font-size: 1.5rem;
 }
 
+
+
 @media screen and (max-width:768px) {
 
     .top__img {
@@ -350,6 +413,10 @@
         padding: 15px 15px;
         font-size: 0.9rem;
         width: 200px;
+    }
+
+    .top__scroll-button {
+        display: none;
     }
 
     .top-assertion {

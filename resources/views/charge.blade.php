@@ -23,10 +23,28 @@
     <p class="charge__monthly-amount">月額&nbsp<span class="charge__monthly-amount-price">{{ number_format($course->price) }}</span>円</p>
 
     <p class="charge__monthly-desc"></p>
+    <p class="charge__desc">※下記のボタンをクリックすると、カード情報入力画面が表示されます。</p>
+    <p class="charge__desc">※Visa、Mastercard、American Expressのクレジットカードがご利用いただけます。</p>
+    
     <form class="charge__form" action="{{ route('charge.createsub') }}" method="POST">
         @csrf
         <input type="hidden" name="course_cd" value="{{ $course->course_cd }}">
-        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ $apiKeyPub }}" data-amount="{{ $course->price }}" data-name="Therapy Time | {{ $course->name }}" data-email="{{ $user->email }}" data-description="" data-image="https://stripe.com/img/documentation/checkout/marketplace.png" data-locale="ja" data-currency="jpy" data-panel-label="決済する" data-label="決済する" $.ajaxSetup({ headers: { 'X-CSRF-TOKEN' : $('meta[name="csrf-token" ]').attr('content') } })>
+        <script 
+        src="https://checkout.stripe.com/checkout.js" 
+        class="stripe-button" 
+        data-key="{{ $apiKeyPub }}" 
+        data-amount="{{ $course->price }}" 
+        data-name="TherapyTime | {{ $course->name }}" 
+        data-email="{{ $user->email }}" 
+        data-description="" 
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
+        data-locale="ja" 
+        data-currency="jpy" 
+        data-panel-label="決済画面に進む" 
+        data-label="決済画面に進む" 
+        $.ajaxSetup({ 
+            headers: { 'X-CSRF-TOKEN' : $('meta[name="csrf-token" ]').attr('content') } 
+        })>
         </script>
     </form>
 </section>

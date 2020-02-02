@@ -17,7 +17,7 @@
         </ul>
         
     </nav>
-    <div class="footer-copyright">Copyright © Therapy Time All Rights Reserved.</div>
+    <div class="footer-copyright">Copyright © TherapyTime All Rights Reserved.</div>
 </footer>
 <script src="{{ mix('/js/app.js') }}"></script> 
 @endsection
