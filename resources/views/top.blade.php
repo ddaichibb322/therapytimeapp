@@ -1,7 +1,7 @@
 @extends('layouts.template_top')
 
 @section('title', 'トップページ')
-@section('description', 'TherapyTime(セラピータイム)は、あなたの心に「ゆとり」をもたらすオンライン瞑想アプリです。専門家監修の動画コンテンツを用いて、いつでも何度でも手軽に本格瞑想に取り組むことができる、新しい瞑想サービスです。')
+@section('description', 'TherapyTime(セラピータイム)は、人生に「ゆとり」をもたらすオンライン瞑想アプリです。専門家監修の動画を用いて、いつでも手軽に本格瞑想が行えます。多くの方に瞑想を知ってもらうために、無料コンテンツも豊富に揃えています。')
 
 @include('layouts.head')
 
@@ -10,7 +10,7 @@
 @section('content')
 <section class="top">
     <div class="img top__img">
-        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想サービスです。</h2>
+        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想アプリです。</h2>
         <a class="top__button" href="/register">まずは無料で登録</a>
         <p class="top__scroll-button js-scroll"><a class="top__scroll-anchor" href="">SCROLL</a></p>
         <div class="top-assertion">
@@ -36,7 +36,7 @@
 </section> -->
 <section id="scroll-target" class="top-section">
     <h2 class="top-section-title">瞑想に、効果はない？</h2>
-    <p class="top-section-text">&nbsp;&nbsp;あなたは、<b>「瞑想ってほんとに効果はあるの？」と思っていませんか？</b><br>&nbsp;&nbsp;確かに、日本ではまだ瞑想はマイナーで、発展途上です。また目に見えない精神的な効果を実感するのは、実際にやってみないと難しいところもあります。<br>&nbsp;&nbsp;しかし、海外では<b>世界的企業のトップやセレブ、プロスポーツ選手などの間で瞑想が大変な人気</b>となっています。<br>&nbsp;&nbsp;そのような成功者たちがこぞって瞑想に取り組むのには、「気持ちに余裕を持たせ、パフォーマンスを高める」という理由が多いです。<br>&nbsp;&nbsp;世界的に見れば、情報やモノが溢れかえるこの現代に、<b>今の自分自身を打ち破り、理想の人生を手に入れるよう</b>として瞑想に取り組む人は非常に多くいます。<br>&nbsp;&nbsp;<b>瞑想の効果は、科学的にも証明されています</b>ので、あなたもぜひ一度取り組んでみてはいかがでしょうか。
+    <p class="top-section-text">&nbsp;&nbsp;あなたは、<b>「瞑想ってほんとに効果はあるの？」と思っていませんか？</b><br>&nbsp;&nbsp;確かに、日本ではまだ瞑想はマイナーで、発展途上です。<br>&nbsp;&nbsp;しかし、海外では<b>世界的企業のトップやセレブ、プロスポーツ選手などの間で瞑想が大変な人気</b>となっており、多くの企業が瞑想を取り入れ始めています。<br>&nbsp;&nbsp;理由は、瞑想の効果が科学的に証明されてきたことや、瞑想によって人生を豊かにできることがわかりつつあるからだと考えられます。<br>&nbsp;&nbsp;このことから、情報やモノが溢れかえるこの現代に、<b>精神的な豊かさの重要性を見出すムーブメントが到来している</b>と言えるでしょう。<br>&nbsp;&nbsp;<b>ゆとりのある豊かな人生を歩むため</b>に、あなたもぜひ一度瞑想に取り組んでみてはいかがでしょうか。
     </p>
 </section>
 <section class="top-section--bg-gray">
@@ -54,7 +54,7 @@
                 <h3 class="top-section__reason-title">集中力を高める</h3>
                 <img class="top-section__reason-img" src="/img/concentration.jpg" alt="reason1">
             </div>
-            <p class="top-section__reason-desc">&nbsp;&nbsp;科学的に、<b>瞑想によって集中力が高まることがわかっています。</b><br>&nbsp;&nbsp;海外をはじめ、日本国内でも福利厚生として瞑想サービスを取り入れる企業が目立ち始めています。<br>&nbsp;&nbsp;<b>仕事や趣味、人間関係において理想とする成果を得るために、瞑想が活用されています。</b></p>
+            <p class="top-section__reason-desc">&nbsp;&nbsp;科学的に、<b>瞑想によって集中力が高まることがわかっています。</b><br>&nbsp;&nbsp;海外をはじめ、日本国内でも福利厚生として瞑想アプリapuriを取り入れる企業が目立ち始めています。<br>&nbsp;&nbsp;<b>仕事や趣味、人間関係において理想とする成果を得るために、瞑想が活用されています。</b></p>
         </div>
         <div class="top-section__reason">
             <div class="top-section__reason-img-container">
@@ -81,12 +81,12 @@
             <h3 class="top-section__merit-title">動画コンテンツで、費用を抑えて本格瞑想！</h3>
             <div class="top-section__merit-img-container"><img class="top-section__merit-img--1" src="/img/top-merit1.svg" alt=""></div>
 
-            <p class="top-section__merit-desc">&nbsp;&nbsp;セラピータイムは、<b>瞑想動画コンテンツによって、費用を抑えつつ効果的な瞑想</b>を行える瞑想アプリです。<br>&nbsp;&nbsp;<b>高額なお金を払う必要はありません。</b>店舗で行う瞑想は、賃料や人件費がかかりどうしても費用が高くなりますし、独学では正しい方法にたどり着くのに時間がかかりすぎます。<br>&nbsp;&nbsp;これから瞑想を始める方も、すでに取り組んでいる方も、<b>セラピータイムなら専門家の指導下で、月280円〜のお手頃な価格で本格的な瞑想に取り組めます。</b></p>
+            <p class="top-section__merit-desc">&nbsp;&nbsp;セラピータイムは、<b>瞑想動画コンテンツをWebブラウザで視聴し、音声誘導に従いながら瞑想に取り組めるアプリです。</b>費用を抑えて効果的な瞑想を行うことが可能です。<br>&nbsp;&nbsp;<b>瞑想を行うことに、高い料金を支払う必要はありません。</b>例えば店舗などの「オフライン」で行う瞑想は、賃料や人件費がかかりどうしても費用が高くなりますし、独学では正しい方法にたどり着くのに膨大な時間がかかってしまいます。<br>&nbsp;&nbsp;これから瞑想を始める方も、すでに瞑想に取り組んでいる方も、<b>セラピータイムなら専門家の指導下で、月280円〜のお手頃な価格で本格的な瞑想に取り組めます。</b></p>
         </div>
         <div class="top-section__merit-container">
             <h3 class="top-section__merit-title">「いつでも」「どこでも」「何度でも」瞑想できる！</h3>
             <div class="top-section__merit-img-container"><img class="top-section__merit-img--2" src="/img/top-merit2.svg" alt=""></div>
-            <p class="top-section__merit-desc">&nbsp;&nbsp;セラピータイムは、<b>定額制のオンライン瞑想アプリ</b>です。<br>&nbsp;&nbsp;<b>好きな時に、好きな場所で、好きな回数だけ</b>瞑想に取り組んでいただけます。<br>&nbsp;&nbsp;瞑想になかなか時間の取れない方も、たくさん時間を割きたい方も、日本にいても海外にいても、好きなだけ、このアプリの動画コンテンツを通して<b>質の高い瞑想</b>をすることができます。<br>&nbsp;&nbsp;店舗やサロンで行なう瞑想サービスと比べて、<b>どなたでも取り組みやすい瞑想サービスです。</b></p>
+            <p class="top-section__merit-desc">&nbsp;&nbsp;セラピータイムは、<b>定額制のオンライン瞑想アプリ</b>です。<br>&nbsp;&nbsp;Web上で、ブラウザを通して、手軽に瞑想に取り組んでいただけます。<br>&nbsp;&nbsp;また定額でアプリを利用し放題なので、<b>好きな時に、好きな場所で、好きな回数だけ</b>瞑想に取り組んでいただけます。<br>&nbsp;&nbsp;瞑想になかなか時間の取れない方も、たくさん時間を割きたい方も、日本にいても海外にいても、好きなだけ、このアプリの動画コンテンツを通して<b>質の高い瞑想</b>をすることができます。<br>&nbsp;&nbsp;店舗やサロンで行なう瞑想アプリと比べて、<b>どなたでも手軽に取り組むことが可能です。</b></p>
         </div>
     </div>
 </section>
@@ -134,8 +134,8 @@
 <section class="top-section">
     <h2 class="top-section-title">Q&A</h2>
     <div class="panel-qa">
-        <h2 class="panel-qa-title">Q. 他のオンライン瞑想サービスとどのように違いますか？</h2>
-        <p class="panel-qa-text">コンテンツの品質の高さです。セラピータイムのコンテンツは、全て米国公式認定機関の専門家によって製作されています。<br>他のオンライン瞑想サービスと比べてセラピータイムは、「手軽なのに本格的」という部分で差別化を実現しています。</p>
+        <h2 class="panel-qa-title">Q. 他のオンライン瞑想アプリとどのように違いますか？</h2>
+        <p class="panel-qa-text">コンテンツの品質の高さです。セラピータイムのコンテンツは、全て米国公式認定機関の専門家によって製作されています。<br>他のオンライン瞑想アプリと比べてセラピータイムは、「手軽なのに本格的」という部分で差別化を実現しています。</p>
     </div>
     <div class="panel-qa">
         <h2 class="panel-qa-title">Q. なぜ動画教材なのですか？</h2>
@@ -144,6 +144,18 @@
     <div class="panel-qa">
         <h2 class="panel-qa-title">Q. 月額制のようですが、初回は日割り計算が行われますか？</h2>
         <p class="panel-qa-text">はい。通常毎月1日に当月分の決済が行われますが、月の途中から参加された場合には日割り計算が適用されるので、無駄な料金を支払うことなくサービスをご利用いただけます。</p>
+    </div>
+    <div class="panel-qa">
+        <h2 class="panel-qa-title">Q. スマホからでも利用可能ですか？</h2>
+        <p class="panel-qa-text">はい。セラピータイムはブラウザを通してご利用いただけるオンライン瞑想アプリケーションです。スマホからでも、SafariやGoogle Chromeといったブラウザを通して、このアプリケーションをご利用いただけます。</p>
+    </div>
+    <div class="panel-qa">
+        <h2 class="panel-qa-title">Q. 月に1回しかやらなかったら損ですか？</h2>
+        <p class="panel-qa-text">いいえ。月に一度のご利用の場合であっても、もともとの定額料金を低く設定しているため、他の瞑想アプリやサービスをご利用される場合と比べて、十分お得に瞑想に取り組んでいただけます。</p>
+    </div>
+    <div class="panel-qa">
+        <h2 class="panel-qa-title">Q. 料金を銀行振込することは可能ですか？</h2>
+        <p class="panel-qa-text">いいえ。セラピータイムでは、Visa/Master Card/American Expressのクレジットカードのみご利用いただけます。</p>
     </div>
     <a href="{{ route('register') }}" class="btn btn-big btn-primary">まずは無料で体験してみる</a>
 </section>
