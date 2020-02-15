@@ -36,7 +36,7 @@
 
 <!-- サイトタイトル -->
 @if(\Route::current() -> getName() == 'top')
-<title>TherapyTime | オンライン瞑想アプリ</title>
+<title>TherapyTime(セラピータイム) | オンライン瞑想アプリ</title>
 @else
 <title>@yield('title') | オンライン瞑想アプリ【TherapyTime】</title>
 @endif
