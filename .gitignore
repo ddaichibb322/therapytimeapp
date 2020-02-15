@@ -11,3 +11,4 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 public/wordpress/wp-config.php
+public/blog/wp-config.php

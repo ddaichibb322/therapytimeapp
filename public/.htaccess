@@ -15,11 +15,11 @@
     RewriteRule ^ %1 [L,R=301]
 
     # 最後がスラッシュのURLでアクセスされた場合のリダイレクト
-    RewriteCond %{REQUEST_URI} !^/wordpress.*$
+    RewriteCond %{REQUEST_URI} !^/blog.*$
     RewriteRule ^(.*)/$ /$1 [L,R=301]
         
     # Handle Front Controller...
-    RewriteCond %{REQUEST_URI} !^/wordpress.*$
+    RewriteCond %{REQUEST_URI} !^/blog.*$
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
