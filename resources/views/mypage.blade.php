@@ -14,6 +14,8 @@
     <div class="news">
         <h3 class="news__title">お知らせ</h3>
         <div class="news__items">
+            <p class="news__item">2020-02-15 <a href="https://therapy-time.com/blog/archives/20" target="_blank">TherapyTimeアプリのトライアル期間に関するお知らせ</a>
+            </p>
             <p class="news__item">2020-01-17 セッション「目標を達成する
                 」を追加しました。</p>
             <p class="news__item">2020-01-10 TherapyTimeのアプリをWeb上で公開開始しました。</p>
