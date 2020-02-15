@@ -144,7 +144,7 @@ class ChargeController extends Controller
             \Stripe\Subscription::create([
                 'customer' => $pay_id,
                 'billing_cycle_anchor' => $dt->getTimestamp(), 
-                'trial_from_plan' => false,
+                'trial_from_plan' => true,
                 "items" => [
                     [
                       "plan" => $plan_cd,
