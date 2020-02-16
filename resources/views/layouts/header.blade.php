@@ -22,7 +22,7 @@
                     <a class="header__menu-item-link" href="{{ route('plan') }}"><i class="fas fa-yen-sign icon"></i>料金プラン</a>
                 </li>
                 <li class="header__menu-item">
-                    <a class="header__menu-item-link" href="https://therapy-time.com/blog/"><i class="fas fa-book icon"></i>ブログ</a>
+                    <a class="header__menu-item-link" target="_blank" href="https://therapy-time.com/blog/"><i class="fas fa-book icon"></i>ブログ</a>
                 </li>
                 @auth
                 <li class="header__menu-item">
