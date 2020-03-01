@@ -25,7 +25,6 @@
     <p class="charge__monthly-desc"></p>
     <p class="charge__desc">※下記のボタンをクリックすると、カード情報入力画面が表示されます。</p>
     <p class="charge__desc">※Visa、Mastercard、American Expressのクレジットカードがご利用いただけます。</p>
-    
     <form class="charge__form" action="{{ route('charge.createsub') }}" method="POST">
         @csrf
         <input type="hidden" name="course_cd" value="{{ $course->course_cd }}">
@@ -40,8 +39,8 @@
         data-image="https://stripe.com/img/documentation/checkout/marketplace.png" 
         data-locale="ja" 
         data-currency="jpy" 
-        data-panel-label="決済画面に進む" 
-        data-label="決済画面に進む" 
+        data-panel-label="支払う" 
+        data-label="カードで決済する" 
         $.ajaxSetup({ 
             headers: { 'X-CSRF-TOKEN' : $('meta[name="csrf-token" ]').attr('content') } 
         })>

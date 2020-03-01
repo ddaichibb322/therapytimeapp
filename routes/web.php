@@ -23,6 +23,7 @@ Route::get('/agreement', 'HomeController@agreement')->name('agreement');
 Route::get('/tokutei', 'HomeController@tokutei')->name('tokutei');
 Route::get('/policy', 'HomeController@policy')->name('policy');
 
+
 Route::get('/contact', 'ContactController@index')->name('contact');
 Route::post('/contact/sendmail', 'ContactController@sendmail')->name('contact.sendmail');
 
@@ -37,7 +38,7 @@ Route::get('/session/{id}', 'SessionController@detail')->name('session.detail');
 
 Route::get('/charge/{course_cd}', 'ChargeController@index')->name('charge');
 Route::post('/charge/createsub', 'ChargeController@createSub')->name('charge.createsub');
-
+Route::get('/charge/paycomplete', 'ChargeController@paycomplete')->name('paycomplete');
 
 Route::post('/opinion/sendmail', 'OpinionController@sendmail')->name('opinion.sendmail');
 

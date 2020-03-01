@@ -180,7 +180,12 @@ class ChargeController extends Controller
             return redirect()->back()->withErrors(['エラーが発生しました。お問い合わせよりご連絡ください。'])->withInput();
         }
         
-        return view('paycomplete');
+        return redirect()->route('paycomplete');
         
+    }
+
+    public function paycomplete()
+    {
+        return view('paycomplete');
     }
 }
