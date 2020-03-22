@@ -14,31 +14,39 @@ class MypageController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('verified');
     }
     
-    public function index()
-    {
-        // 現在ログインしているユーザー情報(DBデータ)を取得
-        $user_data = Auth::user();
-        $common = new \Common;
+    public function index() {
+        try {
+            // 現在ログインしているユーザー情報(DBデータ)を取得
+            $user_data = Auth::user();
+            $common = new \Common;
 
-        return view('mypage', [
-            'user_data' => $user_data,
-            'course_name' => $common->getCourseName(),
-            'course_price' => $common->getCoursePrice()
-        ]);
+            return view('mypage', [
+                'user_data' => $user_data,
+                'course_name' => $common->getCourseName(),
+                'course_price' => $common->getCoursePrice()
+            ]);
+        } catch (\Exception $e) {
+            \Log::error($e->getMessage(), ['file' => __FILE__, 'line' => __LINE__]);
+            abort(500);
+        }
     }
 
-    public function update(Request $request, $id) 
-    {
-        $validatedData = $request->validate(User::$rules);
-        unset($validatedData['email']);
-        $user = User::find($id);
-        $user->fill($validatedData)->save();
-        return redirect()->route('mypage');
+    public function update(Request $request, $id) {
+        try {
+            $validatedData = $request->validate(User::$rules);
+            unset($validatedData['email']);
+            $user = User::find($id);
+            $user->fill($validatedData)->save();
+            return redirect()->route('mypage')->with('success', '登録情報の更新が完了しました。');
+        } catch (\Exception $e) {
+            \Log::error($e->getMessage(), ['file' => __FILE__, 'line' => __LINE__]);
+            \Log::error("id:" . $id);
+            return redirect()->back()->withErrors(['エラーが発生しました。お問い合わせよりご連絡ください。'])->withInput();
+        } 
     }
 
     public function showChangePasswordForm() {

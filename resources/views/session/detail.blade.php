@@ -7,8 +7,8 @@
 @include('layouts.head')
 @include('layouts.header')
 
+@section('breadcrumbs', Breadcrumbs::render('session.detail', $content_detail_data->name, $content_detail_data->id))
 @section('content')
-
 <section class="session-detail">
     <h2 class="page-title">{{ $content_detail_data->name }}</h2>
     @if (empty($content_detail_data))
@@ -55,14 +55,8 @@
         </div>
         @if (!empty($content_detail_data->outline))
         <div class="session-detail__info">
-            <h3 class="session-detail__subtitle">セッションの概要</h3>
+            <h3 class="session-detail__subtitle">概要</h3>
             <p class="session-detail__description">{{ $content_detail_data->outline }}</p>
-        </div>
-        @endif
-        @if (!empty($content_detail_data->caution))
-        <div class="session-detail__info">
-            <h3 class="session-detail__subtitle">注意事項</h3>
-            <p class="session-detail__description">{{ $content_detail_data->caution }}</p>
         </div>
         @endif
         @if (!empty($content_detail_data->supplement))
@@ -71,6 +65,12 @@
             <p class="session-detail__description">{{ $content_detail_data->supplement }}</p>
         </div>
         @endif
+        @if (!empty($content_detail_data->caution))
+        <div class="session-detail__info">
+            <h3 class="session-detail__subtitle">注意事項</h3>
+            <p class="session-detail__description">{{ $content_detail_data->caution }}</p>
+        </div>
+        @endif        
     </div>
     @endif
 

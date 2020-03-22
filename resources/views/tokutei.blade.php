@@ -6,7 +6,7 @@
 
 @include('layouts.header')
 
-
+@section('breadcrumbs', Breadcrumbs::render('tokutei'))
 @section('content')
 <div class="text-page">
     <h2 class="text-page__main-title">特定商取引法に基づく表示</h2>

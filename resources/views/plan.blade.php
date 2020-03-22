@@ -7,6 +7,7 @@
 
 @include('layouts.header')
 
+@section('breadcrumbs', Breadcrumbs::render('plan'))
 @section('content')
 <section class="plan-section">
     <h2 class="plan-section__title">料金プラン</h2>
@@ -47,9 +48,9 @@
             @notpaiduser 
             <p class="plan-card__caution">※ユーザー登録後にログインした状態で、下記のボタンからご入会いただけます。</p>
             <p class="plan-card__caution">※下記のボタンをクリックすると、決済ページに移動します。決済ページにてカード情報を入力してください。</p>
-            <p class="plan-card__caution">※トライアル期間中に解約申請された場合は料金は発生しません。</p>
+            <p class="plan-card__caution">※無料お試し期間中に解約申請された場合は料金は発生しません。</p>
             <p class="plan-card__caution">※下記のボタンをクリックしただけでは、決済は行われませんのでご安心ください。</p>
-            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'L001']) }}">入会する</a> 
+            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'L001']) }}">入会ページへ</a> 
             @endnotpaiduser
             @paiduser 
             <p class="plan-card__caution">※プラン変更をご希望の方はお問い合わせよりご連絡ください。</p>
@@ -96,9 +97,9 @@
             @notpaiduser 
             <p class="plan-card__caution">※ユーザー登録後にログインした状態で、下記のボタンからご入会いただけます。</p>
             <p class="plan-card__caution">※下記のボタンをクリックすると、決済ページに移動します。決済ページにてカード情報を入力してください。</p>
-            <p class="plan-card__caution">※トライアル期間中に解約申請された場合は料金は発生しません。</p>
+            <p class="plan-card__caution">※無料お試し期間中に解約申請された場合は料金は発生しません。</p>
             <p class="plan-card__caution">※下記のボタンをクリックしただけでは、決済は行われませんのでご安心ください。</p>
-            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'M001']) }}">入会する</a> 
+            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'M001']) }}">入会ページへ</a> 
             @endnotpaiduser
             @paiduser 
             <p class="plan-card__caution">※プラン変更をご希望の方はお問い合わせよりご連絡ください。</p>
@@ -142,9 +143,9 @@
             @notpaiduser 
             <p class="plan-card__caution">※ユーザー登録後にログインした状態で、下記のボタンからご入会いただけます。</p>
             <p class="plan-card__caution">※下記のボタンをクリックすると、決済ページに移動します。決済ページにてカード情報を入力してください。</p>
-            <p class="plan-card__caution">※トライアル期間中に解約申請された場合は料金は発生しません。</p>
+            <p class="plan-card__caution">※無料お試し期間中に解約申請された場合は料金は発生しません。</p>
             <p class="plan-card__caution">※下記のボタンをクリックしただけでは、決済は行われませんのでご安心ください。</p>
-            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'S001']) }}">入会する</a> 
+            <a class="plan-card__entry" href="{{ route('charge', ['course_cd' => 'S001']) }}">入会ページへ</a> 
             @endnotpaiduser
             @paiduser 
             <p class="plan-card__caution">※プラン変更をご希望の方はお問い合わせよりご連絡ください。</p>

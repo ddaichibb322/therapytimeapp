@@ -11,7 +11,7 @@
             </div>
             <ul class="header__menu">
                 <li class="header__menu-item">
-                    <a class="header__menu-item-link" href="{{ route('session') }}"><i class="fas fa-chalkboard-teacher icon"></i>セッション一覧</a>
+                    <a class="header__menu-item-link" href="{{ route('session') }}"><i class="fas fa-chalkboard-teacher icon"></i>瞑想する</a>
                 </li>
                 @auth
                 <li class="header__menu-item">
@@ -19,10 +19,13 @@
                 </li>
                 @endauth
                 <li class="header__menu-item">
-                    <a class="header__menu-item-link" href="{{ route('plan') }}"><i class="fas fa-yen-sign icon"></i>料金プラン</a>
+                    <a class="header__menu-item-link" href="{{ route('plan') }}"><i class="fas fa-yen-sign icon"></i>料金</a>
                 </li>
                 <li class="header__menu-item">
                     <a class="header__menu-item-link" target="_blank" href="https://therapy-time.com/blog/"><i class="fas fa-book icon"></i>ブログ</a>
+                </li>
+                <li class="header__menu-item">
+                    <a class="header__menu-item-link" href="{{ route('contact') }}"><i class="far fa-envelope icon"></i>お問い合わせ</a>
                 </li>
                 @auth
                 <li class="header__menu-item">

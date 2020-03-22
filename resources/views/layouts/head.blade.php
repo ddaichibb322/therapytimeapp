@@ -63,12 +63,12 @@
 <!-- Windows用タイル設定 -->
 <meta name="msapplication-TileImage" content="{{ asset('/img/icon_150.png') }}" />
 <meta name="msapplication-TileColor" content="#7C41CD"/>
+<meta name="csrf-token" content="{{ csrf_token() }}">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="preload" type="text/css" href="{{ mix('/css/app.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 <noscript><link rel="stylesheet" href="{{ mix('/css/app.css') }}"></noscript>
-
 <script>
     /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
     (function(a) {

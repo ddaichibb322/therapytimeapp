@@ -6,15 +6,29 @@
  
 @include('layouts.header')
 
-
+@section('breadcrumbs', Breadcrumbs::render('contact'))
 @section('content')
 <div class="contact">
+    @if (session('success'))
+    <div class="alert alert-success mt20">
+        {{ session('success') }}
+    </div>
+    @endif
+    @if ($errors->any())
+    <div class="alert alert-danger mt20">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif    
     <h2 class="contact__title">お問い合わせ</h2>
     <form class="contact__form" action="{{ route('contact.sendmail') }}" method="POST">
     @csrf
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください。">
+            <input type="email" class="form-control" id="email" name="email" placeholder="メールアドレスを入力してください。" value="{{ $user_data ? $user_data->email : '' }}" {{ $user_data ? 'readonly' : '' }}>
             @error('email')
             <div class="alert alert-danger">{{ $message }}</div>
             @enderror

@@ -8,9 +8,10 @@
 
 @include('layouts.header')
 
+@section('breadcrumbs', Breadcrumbs::render('session'))
 @section('content')
 <section>
-    <h2 class="page-title">セッション一覧</h2>
+    <h2 class="page-title">瞑想コンテンツ一覧</h2>
     @if (empty($contents_data))
     セッションがありません。
     @else

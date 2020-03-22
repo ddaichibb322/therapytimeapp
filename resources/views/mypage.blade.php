@@ -8,8 +8,23 @@
 
 @include('layouts.header')
 
+@section('breadcrumbs', Breadcrumbs::render('mypage'))
 @section('content')
 <section class="mypage">
+    @if (session('success'))
+    <div class="alert alert-success mt20">
+        {{ session('success') }}
+    </div>
+    @endif
+    @if ($errors->any())
+    <div class="alert alert-danger mt20">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
     <h2 class="page-title">マイページ</h2>
     <div class="news">
         <h3 class="news__title">お知らせ</h3>
@@ -32,15 +47,6 @@
     <div class="userinfo">
         <h3 class="userinfo__title">登録情報</h3>
         <div class="userinfo__items">
-            @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div><br />
-            @endif
             <form class="mypage-form" action="{{ url('/mypage/' . $user_data->id) }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="form-group">
@@ -49,9 +55,9 @@
                 </div>
                 <div class="form-group">
                     <label for="name">ユーザ名</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="未登録" value="{{ $user_data->name }}">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="未登録" value="{{ old('name', $user_data->name) }}">
                 </div>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="gender">性別</label>
                     <select class="form-control" id="gender" name="gender">
                         <option value="" @if(empty($user_data->gender)) selected @endif>未登録</option>
@@ -111,7 +117,7 @@
                         <option value="46" @if($user_data->prefecture == '46') selected @endif>鹿児島県</option>
                         <option value="47" @if($user_data->prefecture == '47') selected @endif>沖縄県</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="mypage-form__submit-button-container">
                     <button type="submit" class="btn btn-primary mypage-form__submit-button">更新する</button>
                     <a href="changepassword" class="mypage-form__password-change-link">パスワード変更はこちらから</a>

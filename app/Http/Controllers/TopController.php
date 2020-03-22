@@ -15,11 +15,6 @@ class TopController extends Controller
      */
     public function index()
     {
-        if (Auth::check()) {
-            // ログインユーザにLPは見せない。
-            return redirect()->route('session'); 
-        }
-
         return view('top');
     }
 }

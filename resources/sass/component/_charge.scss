@@ -45,6 +45,7 @@
 .charge__form {
     text-align:center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button.stripe-button-el,
@@ -57,7 +58,7 @@ button.stripe-button-el>span {
     transition: all 0.3s 0s ease;
     width: 300px;
     height: 50px;
-    font-size: 1.6rem;
+    font-size: 1rem;
     line-height: 50px;
 }
 

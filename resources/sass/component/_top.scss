@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
+.top-container {
+    margin-bottom: 90px;
+}
+
 .top {
     position: relative;
 }
@@ -16,7 +20,7 @@
     background-image:url('/img/top.jpg'); 
 }
 
-.top__button {
+.top__button--top {
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 1;
@@ -31,6 +35,54 @@
     display: block;
     background: linear-gradient(to right, #f74949, #ffb947);
     opacity: 0.8;
+    letter-spacing: 2px;
+    overflow: hidden;
+}
+.top__button--top:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, .2);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -12%;
+    left: -190%;
+    transition: .3s ease-in-out;
+}
+
+.top__button--top:hover:before {
+    left: 60%;
+}
+
+ 
+.top__button--top:hover, .top__button--top:focus, .top__button--top:active {
+    
+    /* background: linear-gradient(to right, #f74949, #f2ae40);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color:white; */
+    text-decoration: none;
+    color: white;
+    
+} 
+
+
+.top__button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    border-radius: 3px;    
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;    
+    border: none;
+    padding: 2.25rem 7rem;
+    display: block;
+    background: linear-gradient(to right, #f74949, #ffb947);
+    opacity: 1;
     letter-spacing: 2px;
     overflow: hidden;
 }
@@ -61,6 +113,8 @@
     color: white;
     
 } 
+
+
 
 .top__scroll-button {
     position: absolute;
@@ -206,6 +260,7 @@
     text-align: right;
     width: 50%;
     font-size: 0.8rem;
+    text-decoration: underline;
 }
 
 .top-section-text--width-img {
@@ -282,7 +337,6 @@
     object-fit: cover;
     border-radius: 50%;
     filter: brightness(0.5);
-    ;
 }
 
 .top-section__reason-title {
@@ -302,6 +356,8 @@
     width: 100%;
     text-align: left;
     margin: 0 auto;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
 
@@ -361,6 +417,7 @@
 .panel-qa-title {
     text-align: left;
     font-size: 1.2rem;
+    line-height: 2rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -395,25 +452,35 @@
 @media screen and (max-width:768px) {
 
     .top__img {
-        height: 340px;
+        height: 400px;
         background-image: url('/img/top-sp.jpg'); 
     }
 
     .top__message {
-        font-size: 1.1rem;
         top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin-bottom: 20px;
-        left: 5%;
+        font-size: 1.1rem;
+        width: 240px;
     }
 
-    .top__button {
-        top: 63%;
+    .top__button--top {
+        top: 66%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 15px 15px;
-        font-size: 0.9rem;
-        width: 200px;
+        font-size: 1.1rem;
+        width: 240px;
+        opacity: 1;
     }
+
+    .top__button {
+        padding: 15px 15px;
+        font-size: 1.1rem;
+        width: 240px;
+        opacity: 1;
+    }    
 
     .top__scroll-button {
         display: none;
@@ -439,7 +506,7 @@
     }
 
     .top-section-text {
-        width: 100%;
+        width: 90%;
         font-size: 1.1rem;
     }
 
@@ -456,8 +523,7 @@
     }
 
     .top-section__reason-desc {
-        width: 210px;
-        font-size: 1rem;        
+        width: 90%;
     }
 
     .top-section__merits {
@@ -470,7 +536,7 @@
     }
 
     .top-section__merit-desc {
-        width: 100%;;
+        width: 90%;;
 
     }
 
@@ -501,5 +567,11 @@
         background-size: 1.2rem;
         background-position-y: 1.2rem;
     }
+
+    .top-section-link {
+        width: 90%;
+    }
+    
+    
 
 } 

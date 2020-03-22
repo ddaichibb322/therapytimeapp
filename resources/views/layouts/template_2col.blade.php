@@ -6,6 +6,7 @@
 <body>
 @yield('header')
 <div class="main-container">
+    @yield('breadcrumbs')
     <div class="two-cols">
         <div class="two-cols__main">
             @yield('content')

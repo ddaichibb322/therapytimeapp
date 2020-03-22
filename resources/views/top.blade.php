@@ -10,8 +10,8 @@
 @section('content')
 <section class="top">
     <div class="img top__img">
-        <h2 class="top__message">セラピータイムは、<br>あなたの人生に「ゆとり」をもたらす<br>オンライン瞑想アプリです。</h2>
-        <a class="top__button" href="/register">まずは無料で登録</a>
+        <h2 class="top__message">セラピータイムは、<br>あなたの人生に<br class="sp">ゆとりをもたらす<br>オンライン瞑想アプリです。</h2>
+        <a class="top__button--top" href="/register">まずは無料で始める</a>
         <p class="top__scroll-button js-scroll"><a class="top__scroll-anchor" href="">SCROLL</a></p>
         <div class="top-assertion">
             <ul class="top-assertion__ul">
@@ -100,7 +100,7 @@
     <div class="top-section-link"><a href="https://www.awareness-ins.com/" alt="Awareness Institute" target="_blank">Awareness Instituteのサイトはこちらから</a></div>
 </section>
 
-<section class="top-section">
+<section class="top-section pb100">
     <h2 class="top-section-title">セラピータイムが選ばれる6つの理由</h2>
     <ul class="top-section__reason-ul">
         <li class="top-section__reason-li">専門家の監修による高品質なコンテンツ</li>
@@ -110,7 +110,7 @@
         <li class="top-section__reason-li">豊富なコンテンツから、自分にあった瞑想が探せる</li>
         <li class="top-section__reason-li">誰でも使える簡単な操作</li>
     </ul>
-    <a href="{{ route('register') }}" class="btn btn-big btn-primary">まずは無料で体験してみる</a>
+    <a href="{{ route('register') }}" class="top__button">まずは無料で始める</a>
 
 </section>
 <section class="top-section">
@@ -131,7 +131,7 @@
         <p class="panel-voice-username">20代 会社員 女性</p>
     </div>
 </section>
-<section class="top-section">
+<section class="top-section pb100">
     <h2 class="top-section-title">Q&A</h2>
     <div class="panel-qa">
         <h2 class="panel-qa-title">Q. 他のオンライン瞑想アプリとどのように違いますか？</h2>
@@ -157,7 +157,7 @@
         <h2 class="panel-qa-title">Q. 料金を銀行振込することは可能ですか？</h2>
         <p class="panel-qa-text">いいえ。セラピータイムでは、Visa/Master Card/American Expressのクレジットカードのみご利用いただけます。</p>
     </div>
-    <a href="{{ route('register') }}" class="btn btn-big btn-primary">まずは無料で体験してみる</a>
+    <a href="{{ route('register') }}" class="top__button">まずは無料で始める</a>
 </section>
 <!-- <section class="top-section">
     <h2 class="top-section-title">お知らせ</h2>

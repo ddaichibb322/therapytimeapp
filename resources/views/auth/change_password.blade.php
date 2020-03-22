@@ -5,9 +5,10 @@
 
 @include('layouts.header')
 
+@section('breadcrumbs', Breadcrumbs::render('changepassword'))
 @section('content')
 <div class="change-password">
-    <h2 class="change-password__main-title">パスワード変更画面</h2>
+    <h2 class="change-password__main-title">パスワード変更</h2>
 
     <div class="row justify-content-center">
         <div class="col-md-8">

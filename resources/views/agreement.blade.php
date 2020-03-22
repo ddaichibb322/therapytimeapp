@@ -6,7 +6,7 @@
 
 @include('layouts.header')
 
-
+@section('breadcrumbs', Breadcrumbs::render('agreement'))
 @section('content')
 <div class="text-page">
     <h2 class="text-page__main-title">利用規約</h2>
