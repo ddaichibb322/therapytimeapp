@@ -37,12 +37,15 @@
     font-size: 0.9rem;
 }
 
-.header__log-link {
-    color: white;
+.header__site-name {
     font-size: 1.25rem;
     font-family: 'Abril Fatface',cursive;
-    transition: all 0.5s ease;
     margin-right: 15px;
+}
+
+.header__log-link {
+    color: white;
+    transition: all 0.5s ease;
 }
 
 .header__log-link:hover, .header__log-link:focus, .header__log-link:active {
@@ -138,13 +141,13 @@
     }
 
     .header__log {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
-    
     .header__site-name {
         font-size: 1rem;
         margin-right: 5px;
     }
+
 }
 
 
