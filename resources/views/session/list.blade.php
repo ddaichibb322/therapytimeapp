@@ -22,15 +22,25 @@
             <div class="session__tags">
                 <!-- タイプ start -->
                 @if($content->type->id == 1)
-                <div class="session-thumbnail__type--healing">{{ $content->type->name }}</div>
+                <div class="session-thumbnail__type--1">{{ $content->type->name }}</div>
                 @elseif($content->type->id == 2)
-                <div class="session-thumbnail__type--coaching">{{ $content->type->name }}</div>
+                <div class="session-thumbnail__type--2">{{ $content->type->name }}</div>
                 @elseif($content->type->id == 3)
-                <div class="session-thumbnail__type--spiritual">{{ $content->type->name }}</div>
+                <div class="session-thumbnail__type--3">{{ $content->type->name }}</div>
                 @elseif($content->type->id == 4)
-                <div class="session-thumbnail__type--loveandbeauty">{{ $content->type->name }}</div>
+                <div class="session-thumbnail__type--4">{{ $content->type->name }}</div>
                 @elseif($content->type->id == 5)
-                <div class="session-thumbnail__type--short">{{ $content->type->name }}</div>
+                <div class="session-thumbnail__type--5">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 6)
+                <div class="session-thumbnail__type--6">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 7)
+                <div class="session-thumbnail__type--7">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 8)
+                <div class="session-thumbnail__type--8">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 9)
+                <div class="session-thumbnail__type--9">{{ $content->type->name }}</div>
+                @elseif($content->type->id == 10)
+                <div class="session-thumbnail__type--10">{{ $content->type->name }}</div>
                 @endif
                 <!-- タイプ end -->
 

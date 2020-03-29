@@ -1,7 +1,7 @@
 @section('header')
 <header class="header">
     <nav class="header__nav">
-        <h1 class="header__log"><a class="header__log-link" href="{{ route('top') }}">TherapyTime</a>-オンラインで本格瞑想-</h1>
+        <h1 class="header__log"><a class="header__log-link" href="{{ route('top') }}"><span class="header__site-name">TherapyTime</span>-オンラインで本格瞑想-</a></h1>
         <div id="show">
             <i class="header__sp-menu-opn-btn fa fa-bars"></i>
         </div>

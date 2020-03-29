@@ -71,9 +71,9 @@
 
 }
 
-.session-thumbnail__type--healing {
+.session-thumbnail__type--1 {
     display: inline-block;
-    background-color: #F0A000;
+    background-color: #8b008b;
     color: white;
     font-size: 0.7rem;
     padding: 0.4rem 0.5rem;
@@ -82,9 +82,9 @@
     margin-left: 0;
 }
 
-.session-thumbnail__type--coaching {
+.session-thumbnail__type--2 {
     display: inline-block;
-    background-color: #1e90ff;
+    background-color: #32cd32;
     color: white;
     font-size: 0.75rem;
     padding: 0.4rem 0.5rem;
@@ -93,10 +93,10 @@
     margin-left: 0;
 }
 
-.session-thumbnail__type--spiritual {
+.session-thumbnail__type--3 {
     display: inline-block;
-    background-color: #8b008b;
-    color: white;
+    background-color: #7fffd4;
+    color: black;
     font-size: 0.75rem;
     padding: 0.4rem 0.5rem;
     border-radius: 15px;
@@ -104,7 +104,48 @@
     margin-left: 0;
 }
 
-.session-thumbnail__type--loveandbeauty {
+.session-thumbnail__type--4 {
+    display: inline-block;
+    background-color: #f0e68c;
+    color: black;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 0;
+}
+
+.session-thumbnail__type--5 {
+    display: inline-block;
+    background-color: #dc143c;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 0;
+}
+.session-thumbnail__type--6 {
+    display: inline-block;
+    background-color: #7cfc00;
+    color: black;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 0;
+}
+.session-thumbnail__type--7 {
+    display: inline-block;
+    background-color: #a52a2a;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 0;
+}
+.session-thumbnail__type--8 {
     display: inline-block;
     background-color: #ff69b4;
     color: white;
@@ -114,11 +155,20 @@
     line-height: 1;
     margin-left: 0;
 }
-
-.session-thumbnail__type--short {
+.session-thumbnail__type--9 {
     display: inline-block;
-    background-color: #32cd32;
+    background-color: #0000ff;
     color: white;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 15px;
+    line-height: 1;
+    margin-left: 0;
+}
+.session-thumbnail__type--10 {
+    display: inline-block;
+    background-color: #eee8aa;
+    color: black;
     font-size: 0.75rem;
     padding: 0.4rem 0.5rem;
     border-radius: 15px;
