@@ -22,6 +22,7 @@
         "import-glob-loader": "^1.1.0",
         "jquery": "^3.4.1",
         "laravel-mix": "^4.0.7",
+        "laravel-mix-critical": "^0.1.2",
         "lodash": "^4.17.13",
         "popper.js": "^1.16.0",
         "prettier": "^1.19.1",
@@ -35,5 +36,9 @@
     "browserslist": [
         "last 2 versions",
         "ie 9"
-    ]
+    ],
+    "dependencies": {
+        "laravel-mix-criticalcss": "^1.0.1",
+        "webpack-plugin-critical": "^1.0.0"
+    }
 }
