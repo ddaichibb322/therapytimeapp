@@ -89,6 +89,7 @@ if (location.pathname.slice(0, '/session/'.length) === '/session/') {
       process.env.MIX_APP_URL + '/session/update/' + view_history_id,
       blob
     )
+    return 'EEE'
     e.preventDefault()
   })
 }
