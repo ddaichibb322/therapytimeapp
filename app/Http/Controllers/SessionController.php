@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Course;
 use App\Content;
 use App\Viewable;
+use App\ViewHistory;
 use App\Payment;
-use Illuminate\Http\Request;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
@@ -71,6 +72,17 @@ class SessionController extends Controller
             }
         }
 
+        // ユーザーデータがあれば視聴履歴に登録
+        if (optional($user_data)->id) {
+            $view_history = new ViewHistory();
+            $view_history->fill([
+                'content_id' => $id, 
+                'user_id' => $user_data->id
+            ]);
+            $view_history->save();
+            $view_history_id = $view_history->id;
+        }
+
         $common = new \Common;
         $course_name = $common->getCourseName();
         
@@ -79,8 +91,17 @@ class SessionController extends Controller
             'content_detail_data' => $content_detail_data,
             'is_viewable' => $is_viewable,
             'course_name' => $course_name,
+            'view_history_id' => $view_history_id ? $view_history_id : null,
         ]);
     }
+
+    public function update($id)
+    {
+        \Log::error("pay_at:" . Carbon::now());
+        ViewHistory::find($id)->update(['end_at' => Carbon::now()]);
+        // TODO: 200を返す
+        return null;
+    }    
 
     /*
     * コンテンツのタイプと、そのタイプを閲覧可能なコースの組み合わせを作る。

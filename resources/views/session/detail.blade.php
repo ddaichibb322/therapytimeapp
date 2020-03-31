@@ -9,6 +9,10 @@
 
 @section('breadcrumbs', Breadcrumbs::render('session.detail', $content_detail_data->name, $content_detail_data->id))
 @section('content')
+<script>
+    // ここで変数をセットしておく
+    const view_history_id = '{{ $view_history_id }}'
+</script>
 <section class="session-detail">
     <h2 class="page-title">{{ $content_detail_data->name }}</h2>
     @if (empty($content_detail_data))

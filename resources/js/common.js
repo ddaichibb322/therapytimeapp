@@ -79,3 +79,17 @@ function scrollButtonClick() {
     return false
   })
 }
+
+// 動画を見終わった時刻を保存するためにのでapiをコール
+if (location.pathname.slice(0, '/session/'.length) === '/session/') {
+  $(window).on('beforeunload', function(e) {
+    // application/jsonだとcorsに引っかかるので、application/x-www-form-urlencodedで送る
+    const blob = new Blob([{}], { type: 'application/x-www-form-urlencoded' })
+    navigator.sendBeacon(
+      process.env.MIX_APP_URL + '/session/update/' + view_history_id,
+      blob
+    )
+    return 'EEE'
+    e.preventDefault()
+  })
+}

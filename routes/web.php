@@ -35,6 +35,8 @@ Route::post('/changepassword', 'MypageController@changePassword')->name('changep
 
 Route::get('/session', 'SessionController@show')->name('session');
 Route::get('/session/{id}', 'SessionController@detail')->name('session.detail');
+Route::post('/session/update/{id}', 'SessionController@update')->name('session.update');
+
 
 Route::get('/charge/{course_cd}', 'ChargeController@index')->name('charge');
 Route::post('/charge/createsub', 'ChargeController@createSub')->name('charge.createsub');
