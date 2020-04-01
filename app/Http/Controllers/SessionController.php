@@ -85,7 +85,6 @@ class SessionController extends Controller
 
         $common = new \Common;
         $course_name = $common->getCourseName();
-        
         return view('session.detail', [
             'user_data' => $user_data, 
             'content_detail_data' => $content_detail_data,
