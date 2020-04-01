@@ -97,10 +97,7 @@ class SessionController extends Controller
 
     public function update($id)
     {
-        // TODO:あとでけす
-        \Log::error("pay_at:" . Carbon::now());
         ViewHistory::find($id)->update(['end_at' => Carbon::now()]);
-        // TODO: 200を返す
         return null;
     }    
 

@@ -89,7 +89,6 @@ if (
     // application/jsonだとcorsに引っかかるので、application/x-www-form-urlencodedで送る
     const blob = new Blob([{}], { type: 'application/x-www-form-urlencoded' })
     navigator.sendBeacon(base_url + '/session/update/' + view_history_id, blob)
-    return 'EEE'
     e.preventDefault()
   })
 }
