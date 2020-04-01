@@ -2,10 +2,10 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 
-$(function() {
+$(() => {
   // PC版でスクロール時にヘッダーをフェードインさせる
   // スマホ版ではヘッダーフェードインを行わないようにするため、ブレイクポイントで処理を発火させる
-  var mql = window.matchMedia('screen and (max-width: 768px)')
+  const mql = window.matchMedia('screen and (max-width: 768px)')
   mql.addListener(checkBreakPoint)
   checkBreakPoint(mql)
 
@@ -19,16 +19,16 @@ $(function() {
 })
 
 // 画面幅がブレイクポイントを超えた時に実行される処理
-function checkBreakPoint(mql) {
-  var $header = $('header')
-  var bgPurple = 'bg-purple'
-  var threshold = 100
+const checkBreakPoint = mql => {
+  const $header = $('header')
+  const bgPurple = 'bg-purple'
+  const threshold = 100
 
   // PCから、トップページを開いた場合のみ、
   // 初期表示時はヘッダーの背景色は無色透明にする
   if (!mql.matches && location.pathname === '/') {
     // ヘッダーはスクロール時にフェードインさせる
-    $(window).on('load scroll', function() {
+    $(window).on('load scroll', () => {
       // transitionを設定
       $header.css({
         transition: 'all 0.5s ease',
@@ -36,7 +36,7 @@ function checkBreakPoint(mql) {
         '-moz-transition': 'all 0.5s ease',
         '-o-transition': 'all 0.5s ease'
       })
-      var value = $(this).scrollTop()
+      const value = $(this).scrollTop()
       if (value > threshold) {
         $header.addClass(bgPurple)
       } else {
@@ -49,30 +49,30 @@ function checkBreakPoint(mql) {
   }
 }
 
-function spMenu() {
-  var menuOpen = 'menu-open'
-  var show = document.getElementById('show')
-  var hide = document.getElementById('hide')
+const spMenu = () => {
+  const menuOpen = 'menu-open'
+  const show = document.getElementById('show')
+  const hide = document.getElementById('hide')
 
-  show.addEventListener('click', function() {
+  show.addEventListener('click', () => {
     //showをクリックした時bodyに.menu-openをつける
     $('body').addClass(menuOpen)
     $('html').addClass('scroll-prevent')
   })
 
-  hide.addEventListener('click', function() {
+  hide.addEventListener('click', () => {
     //hideをクリックした時
     $('body').removeClass(menuOpen)
     $('html').removeClass('scroll-prevent')
   })
 }
 
-function scrollButtonClick() {
+const scrollButtonClick = () => {
   // #scroll-targetの縦方向の位置からヘッダーの高さを引いたところまでスクロール
-  var targetY = $('#scroll-target').offset().top - $('header').height()
+  const targetY = $('#scroll-target').offset().top - $('header').height()
 
   //スクロールをクリックするとウィンドウの高さ分、下にスクロールする
-  $('.js-scroll a').on('click', function() {
+  $('.js-scroll a').on('click', () => {
     $('html, body')
       .stop()
       .animate({ scrollTop: targetY }, 500, 'swing')
@@ -80,12 +80,12 @@ function scrollButtonClick() {
   })
 }
 
-// 動画を見終わった時刻を保存するためにのでapiをコール
+// 詳細画面で、動画を見終わった時刻を保存するためにapiをコール
 if (
   location.pathname.slice(0, '/session/'.length) === '/session/' &&
   view_history_id
 ) {
-  $(window).on('beforeunload', function(e) {
+  $(window).on('beforeunload', e => {
     // application/jsonだとcorsに引っかかるので、application/x-www-form-urlencodedで送る
     const blob = new Blob([{}], { type: 'application/x-www-form-urlencoded' })
     navigator.sendBeacon(base_url + '/session/update/' + view_history_id, blob)
