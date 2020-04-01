@@ -12,6 +12,7 @@
 <script>
     // ここで変数をセットしておく
     const view_history_id = '{{ $view_history_id }}'
+    const base_url = '{{ $base_url }}'
 </script>
 <section class="session-detail">
     <h2 class="page-title">{{ $content_detail_data->name }}</h2>

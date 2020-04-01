@@ -71,7 +71,7 @@ class SessionController extends Controller
                 $is_viewable = true;
             }
         }
-
+        $view_history_id = '';
         // ユーザーデータがあれば視聴履歴に登録
         if (optional($user_data)->id) {
             $view_history = new ViewHistory();
@@ -92,11 +92,13 @@ class SessionController extends Controller
             'is_viewable' => $is_viewable,
             'course_name' => $course_name,
             'view_history_id' => $view_history_id ? $view_history_id : null,
+            'base_url' => config('app.url'), // envからurlを読み込んで渡しておく。
         ]);
     }
 
     public function update($id)
     {
+        // TODO:あとでけす
         \Log::error("pay_at:" . Carbon::now());
         ViewHistory::find($id)->update(['end_at' => Carbon::now()]);
         // TODO: 200を返す

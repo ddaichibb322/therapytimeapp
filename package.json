@@ -38,6 +38,7 @@
         "ie 9"
     ],
     "dependencies": {
+        "dotenv": "^8.2.0",
         "laravel-mix-criticalcss": "^1.0.1",
         "webpack-plugin-critical": "^1.0.0"
     }
