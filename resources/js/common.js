@@ -19,11 +19,9 @@ const sleep = waitMsec => {
   while (new Date() - startMsec < waitMsec);
 }
 
-$(window).on('load', stopload)
-
 $(() => {
-  //10秒たったら強制的にロード画面を非表示
-  setTimeout(stopload, 10000)
+  // ローディング画面終了
+  stopload()
 
   // PC版でスクロール時にヘッダーをフェードインさせる
   // スマホ版ではヘッダーフェードインを行わないようにするため、ブレイクポイントで処理を発火させる
