@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use App\Listeners\VerifiedListener;
+use App\Listeners\LoginListener;
+use Illuminate\Auth\Events\Login;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Events\Verified;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -21,6 +23,10 @@ class EventServiceProvider extends ServiceProvider
         ],
         Verified::class => [
             VerifiedListener::class,
+        ],
+        Login::class => [
+            // 最終ログインを記録するリスナー
+            LoginListener::class,
         ],
     ];
 

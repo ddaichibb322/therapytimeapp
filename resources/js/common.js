@@ -2,9 +2,32 @@ import '@fortawesome/fontawesome-free/js/fontawesome'
 import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 
+const stopload = () => {
+  $('.loader__container')
+    .delay(200)
+    .fadeOut(200)
+  $('.loader')
+    .delay(200)
+    .fadeOut(200)
+  $('.wrap').css('display', 'block')
+}
+
+const sleep = waitMsec => {
+  var startMsec = new Date()
+
+  // 指定ミリ秒間だけループさせる（CPUは常にビジー状態）
+  while (new Date() - startMsec < waitMsec);
+}
+
+$(window).on('load', stopload)
+
 $(() => {
+  //10秒たったら強制的にロード画面を非表示
+  setTimeout(stopload, 10000)
+
   // PC版でスクロール時にヘッダーをフェードインさせる
   // スマホ版ではヘッダーフェードインを行わないようにするため、ブレイクポイントで処理を発火させる
+  sleep(400)
   const mql = window.matchMedia('screen and (max-width: 768px)')
   mql.addListener(checkBreakPoint)
   checkBreakPoint(mql)
