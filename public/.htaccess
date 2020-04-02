@@ -4,6 +4,21 @@
     </IfModule>
 
     RewriteEngine On
+    # Handle Accept-Encoding Header
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.+) $1.gz
+
+    <FilesMatch "\.css\.gz$">
+        ForceType text/css
+        AddEncoding x-gzip .gz
+    </FilesMatch>
+    <FilesMatch "\.js\.gz$">
+        ForceType application/x-javascript
+        AddEncoding x-gzip .gz
+    </FilesMatch>    
+    Header append Vary Accept-Encoding env=!dont-vary
+
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
