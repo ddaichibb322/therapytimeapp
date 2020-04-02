@@ -57,7 +57,7 @@ const checkBreakPoint = mql => {
         '-moz-transition': 'all 0.5s ease',
         '-o-transition': 'all 0.5s ease'
       })
-      const value = $(this).scrollTop()
+      const value = $('.header').offset().top
       if (value > threshold) {
         $header.addClass(bgPurple)
       } else {
